@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-import styles from "./Navbar.module.scss";
+import styles from "../../sass/components/navbar.module.scss";
 
 function Navbar({ navVisibility, setNavVisibility }) {
   useEffect(() => {
