@@ -1,0 +1,82 @@
+import "../../sass/components/Register/register.scss";
+
+const RegisterForm = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+  return (
+    <div className="form-container">
+      <form onSubmit={handleSubmit}>
+        <div className="section">
+          <div className="section-1">
+            <label htmlFor="name">First Name</label>
+            <input type="text" placeholder="First Name" id="name" />
+          </div>
+          <div className="section-2">
+            <label htmlFor="name">Last Name</label>
+            <input type="text" placeholder="Last Name" id="name" />
+          </div>
+        </div>
+        <div className="section">
+          <div className="section-1">
+            <label htmlFor="email">Email</label>
+            <input type="email" placeholder="example@example.com" id="email" />
+          </div>
+          <div className="section-2">
+            <label htmlFor="phone no">Phone Number</label>
+            <input type="number" placeholder="Enter your phone number" />
+          </div>
+        </div>
+        <div className="section">
+          <div className="section-1">
+            <label htmlFor="dob">Date Of Birth</label>
+            <input type="date" name="Date of Birth" />
+          </div>
+          <div className="section-2">
+            <label htmlFor="nationality">Nationality</label>
+            <select>
+              <option value=""></option>
+              <option value="bkf">Burkina Faso</option>
+              <option value="ngr">Nigeria</option>
+              <option value="cam">Cameroun</option>
+              <option value="usa">United States of America</option>
+              <option value="brz">Brazil</option>
+            </select>
+          </div>
+        </div>
+        <div className="section">
+          <div className="section-1">
+            <label htmlFor="name">Department</label>
+            <input type="text" placeholder="Enter your department" />
+          </div>
+          <div className="section-2">
+            <label htmlFor="name">Institution</label>
+            <select>
+              <option value=""></option>
+              <option value="ui">University of Ibadan</option>
+              <option value="">...</option>
+              <option value="">...</option>
+              <option value="">...</option>
+              <option value="">...</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label htmlFor="name">Address</label>
+          <input
+            type="text"
+            placeholder="Enter your Address"
+            className="address"
+          />
+        </div>
+        <button>Register</button>
+        {/* <div>
+                <label htmlFor="name">Last Name</label>
+                <input type="text" placeholder="Name"/>
+            </div> */}
+      </form>
+    </div>
+  );
+};
+
+export default RegisterForm;
