@@ -1,0 +1,51 @@
+.ActivityCard {
+  background: #ffffff;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.04);
+  border-radius: 24px;
+  width: 60%;
+  max-width: 1440px;
+  margin: auto;
+  padding: 2em 5em;
+  box-sizing: border-box;
+  color: #647382;
+  text-align: center;
+  position: relative;
+  top: -6.5em;
+  margin-bottom: -4em;
+}
+
+.container {
+  background: #ffffff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  font-family: "Nunito", sans-serif;
+  width: 210px;
+  border-radius: 7px;
+
+  .img {
+    min-width: 170px;
+    height: 120px;
+    background-image: url("https://static01.nyt.com/images/2019/03/24/travel/24trending-shophotels1/24trending-shophotels1-videoSixteenByNineJumbo1600.jpg");
+    background-size: contain;
+    background-position: center;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  .content {
+    font-size: 14px;
+    padding: 0 15px 15px;
+
+    p {
+      margin: 5px;
+    }
+
+    h3 {
+      font-weight: 800;
+    }
+
+    .bold {
+      font-weight: 600;
+    }
+  }
+}

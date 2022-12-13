@@ -1,0 +1,57 @@
+.accommodation {
+  background-color: #e7fde8;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+
+  &_info {
+    width: 70%;
+
+    & header {
+      text-align: center;
+      max-width: 50%;
+      margin: auto;
+
+      & .heading {
+        text-transform: uppercase;
+        color: #150557;
+        margin: 15px 0;
+        font-size: 35px;
+      }
+
+      & .info {
+        font-size: 20px;
+        line-height: 30px;
+
+        & .redtxt {
+          color: red;
+        }
+      }
+    }
+
+    &_list-cont {
+      padding: 20px;
+      background-color: #f1eed3;
+      margin: 20px;
+      border-radius: 20px;
+
+      & .list {
+        color: #3c2690;
+
+        & .item {
+          font-size: 30px;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+  &_media {
+    &_wrapper {
+      width: 100%;
+      padding: 20px;
+      & img {
+        width: 100%;
+      }
+    }
+  }
+}

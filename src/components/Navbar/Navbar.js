@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import uiLogo from "./../../assets/img/ui-logo.webp";
 
 import styles from "../../sass/components/navbar.module.scss";
 
@@ -24,6 +25,11 @@ function Navbar({ navVisibility, setNavVisibility }) {
   return (
     <div className={styles.MainNav}>
       <ul className={navVisibility ? styles.visibleNav : styles.inVisibleNav}>
+        <h2>
+          <Link to={"/"}>
+            <img src={uiLogo} alt="University of Ibadan" />
+          </Link>
+        </h2>
         <li>
           <Link className="link" to={"/"}>
             <p style={{ color: activeNav === "/" ? color : "" }}>Home</p>
@@ -109,7 +115,7 @@ function Navbar({ navVisibility, setNavVisibility }) {
 
 Navbar.propTypes = {
   navVisibility: PropTypes.bool,
-  setNavVisibility: PropTypes.bool,
+  setNavVisibility: PropTypes.func,
 };
 
 export default Navbar;

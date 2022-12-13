@@ -1,0 +1,29 @@
+.CommonHero {
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(50, 50, 50, 0.458);
+  background-blend-mode: multiply;
+
+  .NavbarLight {
+    ul {
+      li {
+        color: #ffffff;
+      }
+    }
+  }
+
+  &Info {
+    margin: auto;
+    text-align: center;
+    padding: 8em 0;
+    color: #ffffff;
+
+    h1 {
+      font-size: 3em;
+    }
+
+    span {
+      font-weight: 500;
+    }
+  }
+}
