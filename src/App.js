@@ -9,6 +9,7 @@ import Advertisement from "./pages/Advertisement";
 import AboutUs from "./pages/About-Us";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   const location = useLocation();
@@ -34,6 +35,7 @@ const App = () => {
         <Route element={<Login />} path="/login" />
         <Route element={<Register />} path="/register" />
       </Routes>
+      <Footer />
     </>
   );
 };
