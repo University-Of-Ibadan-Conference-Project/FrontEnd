@@ -43,7 +43,7 @@ function Navbar({ navVisibility, setNavVisibility }) {
         </li>
         <li>
           <Link className="link" to={"/help"}>
-            Help
+            Submit Abstract
           </Link>
         </li>
         <li>

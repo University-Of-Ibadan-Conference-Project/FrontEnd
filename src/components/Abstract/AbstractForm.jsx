@@ -1,26 +1,26 @@
-import "../../sass/components/Register/register.scss";
+import "../../sass/components/Abstract/abstract.scss";
 
-const RegisterForm = () => {
+const AbstractForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
   return (
     <div className="form-container">
-      <h1>Register here</h1>
+      <h1>Submit your Abstract</h1>
       <form onSubmit={handleSubmit}>
         <div className="section">
           <div className="section-1">
-            <label htmlFor="name">First Name</label>
-            <input type="text" placeholder="First Name" id="name" />
+            <label htmlFor="title">Title of the Abstract</label>
+            <input type="text" placeholder="First Name" id="title" />
           </div>
           <div className="section-2">
-            <label htmlFor="name">Last Name</label>
+            <label htmlFor="name">Author{`'`}s Name</label>
             <input type="text" placeholder="Last Name" id="name" />
           </div>
         </div>
         <div className="section">
           <div className="section-1">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">Author{`'`}s Email</label>
             <input type="email" placeholder="example@example.com" id="email" />
           </div>
           <div className="section-2">
@@ -28,14 +28,11 @@ const RegisterForm = () => {
             <input type="number" placeholder="Enter your phone number" />
           </div>
         </div>
+
         <div className="section">
           <div className="section-1">
-            <label htmlFor="dob">Date Of Birth</label>
-            <input type="date" name="Date of Birth" />
-          </div>
-          <div className="section-2">
             <label htmlFor="nationality">Nationality</label>
-            <select placeholder="Choose your country">
+            <select>
               <option value=""></option>
               <option value="bkf">Burkina Faso</option>
               <option value="ngr">Nigeria</option>
@@ -43,12 +40,6 @@ const RegisterForm = () => {
               <option value="usa">United States of America</option>
               <option value="brz">Brazil</option>
             </select>
-          </div>
-        </div>
-        <div className="section">
-          <div className="section-1">
-            <label htmlFor="name">Department</label>
-            <input type="text" placeholder="Enter your department" />
           </div>
           <div className="section-2">
             <label htmlFor="name">Institution</label>
@@ -64,26 +55,34 @@ const RegisterForm = () => {
         </div>
         <div className="section">
           <div className="section-1">
-            <label htmlFor="name">Address</label>
-            <input
-              type="text"
-              placeholder="Enter your Address"
-              className="address"
-            />
+            <label htmlFor="pre">Presentation Type</label>
+            <select>
+              <option value=""></option>
+              <option value="Live Oral Presentation">
+                Live Oral Presentation
+              </option>
+              <option value="Poster Presentation">Poster Presentation</option>
+              <option value="Live Virtual Presentation">
+                Live Virtual Presentation
+              </option>
+            </select>
           </div>
           <div className="section-2">
             <label htmlFor="part">Participant Type</label>
-            <div>
-              <input type="radio" />
-              <label htmlFor="part">Oral Presenter</label>
-            </div>
-            <div>
-              <input type="radio" />
-              <label htmlFor="part">Attendee (Non-Presenter)</label>
-            </div>
+            <select>
+              <option value=""></option>
+              <option value="Physical">Physical</option>
+              <option value="Virtual">Virtual</option>
+            </select>
           </div>
         </div>
-        <button>Register</button>
+        <div className="section-1">
+          <label htmlFor="file">
+            Attach the file of your abstract according to the abstract template
+          </label>
+          <input type="file" />
+        </div>
+        <button>Submit</button>
         {/* <div>
                 <label htmlFor="name">Last Name</label>
                 <input type="text" placeholder="Name"/>
@@ -93,4 +92,4 @@ const RegisterForm = () => {
   );
 };
 
-export default RegisterForm;
+export default AbstractForm;
