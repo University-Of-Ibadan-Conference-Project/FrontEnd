@@ -9,7 +9,7 @@ import Advertisement from "./pages/Advertisement";
 import AboutUs from "./pages/About-Us";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import PageTitle from "./components/PageTitle/PageTitle";
+// import PageTitle from "./components/PageTitle/PageTitle";
 
 const App = () => {
   const location = useLocation();
@@ -25,7 +25,7 @@ const App = () => {
         navVisibility={navVisibility}
         setNavVisibility={setNavVisibility}
       />
-      <PageTitle />
+      {/* <PageTitle /> */}
       <Routes>
         <Route element={<Home />} path="/" />
         <Route element={<Help />} path="/submit-abstract" />
