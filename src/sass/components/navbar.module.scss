@@ -10,6 +10,12 @@
   top: 0;
   padding: 1em 0;
 
+  .active {
+    a {
+      color: #e4212a;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     padding: 1em 0.5em;
     border: none;
