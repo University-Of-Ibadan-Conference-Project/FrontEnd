@@ -74,11 +74,11 @@ const RegisterForm = () => {
           <div className="section-2">
             <label htmlFor="part">Participant Type</label>
             <div>
-              <input type="radio" />
+              <input type="radio" name="part" />
               <label htmlFor="part">Oral Presenter</label>
             </div>
             <div>
-              <input type="radio" />
+              <input type="radio" name="part" />
               <label htmlFor="part">Attendee (Non-Presenter)</label>
             </div>
           </div>
