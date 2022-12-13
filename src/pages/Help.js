@@ -1,11 +1,11 @@
 import AbstractForm from "../components/Abstract/AbstractForm";
+import CommonHero from "./../components/CommonHero/CommonHero";
+import abstractBg from "./../assets/img/abstract-bg.jpeg";
 
 export default function Help() {
   return (
     <div>
-      <div className="register-container">
-        <h2>Submit your Absract</h2>
-      </div>
+      <CommonHero title="Submit your Absract" info="" bg={abstractBg} />
       <AbstractForm />
     </div>
   );

@@ -1,4 +1,4 @@
-import "../../sass/components/Abstract/abstract.scss";
+import "./../../sass/components/Form/Form.scss";
 
 const AbstractForm = () => {
   const handleSubmit = (e) => {

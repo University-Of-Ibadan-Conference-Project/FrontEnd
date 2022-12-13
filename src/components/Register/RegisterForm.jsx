@@ -1,4 +1,4 @@
-import "../../sass/components/Register/register.scss";
+import "./../../sass/components/Form/Form.scss";
 
 const RegisterForm = () => {
   const handleSubmit = (e) => {

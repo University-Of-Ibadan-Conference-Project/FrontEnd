@@ -1,12 +1,14 @@
-import "../sass/components/Register/register.scss";
+import "../sass/components/Form/Form.scss";
+import CommonHero from "./../components/CommonHero/CommonHero";
 import RegisterForm from "../components/Register/RegisterForm";
 
 export default function Register() {
   return (
     <section>
-      <div className="register-container">
-        <h2>Register with us.</h2>
-      </div>
+      <CommonHero
+        title="Register with us."
+        bg="https://www.eventpro.net/images/online-event-attendee-registration.jpg"
+      />
       <RegisterForm />
     </section>
   );
