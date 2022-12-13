@@ -25,7 +25,7 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <CountDownTimer date="01/20/2021" />
+      <CountDownTimer />
 
       <div className={styles.HomeInfo}>
         <span>WELCOME TO EDUCATION CONFERENCE 2023</span>

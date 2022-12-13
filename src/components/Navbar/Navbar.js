@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import uiLogo from "./../../assets/img/ui-logo.webp";
+import uiLogo from "./../../assets/img/v2-logo.png";
 
 import styles from "../../sass/components/navbar.module.scss";
 
