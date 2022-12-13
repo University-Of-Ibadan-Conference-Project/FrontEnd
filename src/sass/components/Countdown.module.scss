@@ -2,25 +2,32 @@
   display: flex;
   position: relative;
   justify-content: flex-end;
-  top: -3.2em;
-  right: 0%;
-  // background-color: red;
+  top: -4.5em;
+  // right: 0%;
+  width: fit-content;
+  margin: auto;
 }
 
 .TimeCard {
+  color: #e4212a;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: black;
-  color: #ffffff;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   margin: 0 0.5em;
+  border-radius: 4px;
+  font-weight: 600;
 
   h2 {
     font-weight: 500;
-    font-size: 2em;
+    font-size: 2.5em;
     margin: 0;
+  }
+
+  span {
+    text-transform: uppercase;
   }
 }

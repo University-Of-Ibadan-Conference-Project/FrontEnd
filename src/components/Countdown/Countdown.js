@@ -13,7 +13,7 @@ const CountDownTimer = () => {
 
   useEffect(() => {
     let countdown = () => {
-      let date = +new Date("12/16/2022");
+      let date = +new Date("12/15/2022");
       let difference = date - +new Date();
       if (difference < 1) {
         setState((prevState) => ({ ...prevState, timeUp: true }));
@@ -37,12 +37,10 @@ const CountDownTimer = () => {
     return () => clearInterval(countdown, 1000);
   }, []);
 
-  const { days, hours, minutes, seconds, timeUp } = state;
+  const { days, hours, minutes, seconds } = state;
   const dayString = days > 1 ? "days" : "day";
 
-  return timeUp ? (
-    <p>Event in progress</p>
-  ) : (
+  return (
     <div className={styles.CountDownTimer}>
       <TimeCard value={days} name={dayString} />
       <TimeCard value={hours} name={"hours"} />
