@@ -6,6 +6,10 @@
   // right: 0%;
   width: fit-content;
   margin: auto;
+
+  @media screen and (max-width: 768px) {
+    top: -2.5em;
+  }
 }
 
 .TimeCard {
@@ -29,5 +33,18 @@
 
   span {
     text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 70px;
+    height: 70px;
+
+    h2 {
+      font-size: 2em;
+    }
+
+    span {
+      font-size: 0.75em;
+    }
   }
 }
