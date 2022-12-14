@@ -35,6 +35,10 @@
         &:nth-of-type(2) {
           font-weight: 500;
           font-size: 3em;
+
+          @media screen and (max-width: 768px) {
+            font-size: 2em;
+          }
         }
       }
     }
@@ -43,6 +47,10 @@
       font-weight: 600;
       font-size: 1.5em;
       margin: 0.5em 0;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1em;
+      }
     }
 
     &_remarks {
