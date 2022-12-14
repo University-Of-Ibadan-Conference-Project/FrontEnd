@@ -1,11 +1,18 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import uiLogo from "./../../assets/img/v2-logo.png";
 
 import styles from "../../sass/components/navbar.module.scss";
 
 function Navbar({ navVisibility, setNavVisibility }) {
+  const [activeNav, setActiveNav] = useState("/");
+  const { pathname } = useLocation();
+  useEffect(() => {
+    setActiveNav(pathname);
+  }, [pathname]);
+
   useEffect(() => {
     if (navVisibility) {
       window.onscroll = () => window.scroll(0, 0);
@@ -13,6 +20,7 @@ function Navbar({ navVisibility, setNavVisibility }) {
       window.onscroll = () => {};
     }
   }, [navVisibility]);
+  const color = "#FF7700";
 
   return (
     <div className={styles.MainNav}>
@@ -24,27 +32,39 @@ function Navbar({ navVisibility, setNavVisibility }) {
         </h2>
         <li>
           <Link className="link" to={"/"}>
-            Home
+            <p style={{ color: activeNav === "/" ? color : "" }}>Home</p>
           </Link>
         </li>
         <li>
           <Link className="link" to={"/accomodation"}>
-            Accomodation
+            <p style={{ color: activeNav === "/accomodation" ? color : "" }}>
+              {" "}
+              Accomodation
+            </p>
           </Link>
         </li>
         <li>
           <Link className="link" to={"/committee"}>
-            Committee
+            <p style={{ color: activeNav === "/committee" ? color : "" }}>
+              {" "}
+              Committee
+            </p>
           </Link>
         </li>
         <li>
           <Link className="link" to={"/advertisement"}>
-            Advertisement
+            <p style={{ color: activeNav === "/advertisement" ? color : "" }}>
+              {" "}
+              advertisement
+            </p>
           </Link>
         </li>
         <li>
           <Link className="link" to={"/about-us"}>
-            About Us
+            <p style={{ color: activeNav === "/about-us" ? color : "" }}>
+              {" "}
+              About Us
+            </p>
           </Link>
         </li>
         <li>
