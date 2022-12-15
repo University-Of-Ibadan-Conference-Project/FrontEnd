@@ -47,7 +47,7 @@ function Navbar({ navVisibility, setNavVisibility }) {
           <Link className="link" to={"/committee"}>
             <p style={{ color: activeNav === "/committee" ? color : "" }}>
               {" "}
-              Committee
+              Committees
             </p>
           </Link>
         </li>
@@ -63,7 +63,7 @@ function Navbar({ navVisibility, setNavVisibility }) {
           <Link className="link" to={"/about-us"}>
             <p style={{ color: activeNav === "/about-us" ? color : "" }}>
               {" "}
-              About Us
+              About
             </p>
           </Link>
         </li>
