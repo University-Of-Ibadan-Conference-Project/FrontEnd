@@ -55,7 +55,7 @@ function Navbar({ navVisibility, setNavVisibility }) {
           <Link className="link" to={"/advertisement"}>
             <p style={{ color: activeNav === "/advertisement" ? color : "" }}>
               {" "}
-              advertisement
+              Advertisement
             </p>
           </Link>
         </li>
