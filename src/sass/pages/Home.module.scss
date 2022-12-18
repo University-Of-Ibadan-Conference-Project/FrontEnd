@@ -1,5 +1,5 @@
 .Home {
-  background-image: url("https://jobstars.com/wp-content/uploads/2020/06/Event-Management-Professional-Associations-Organizations.png");
+  background-image: url("https://pbs.twimg.com/media/D_5zisFX4AA1rc8.jpg:large");
 
   color: #ffffff;
   background-size: cover;
@@ -28,12 +28,12 @@
 
       h2 {
         &:nth-of-type(1) {
-          font-size: 6em;
+          font-size: 5em;
           font-weight: 600;
         }
 
         &:nth-of-type(2) {
-          font-weight: 500;
+          font-weight: 700;
           font-size: 3em;
 
           @media screen and (max-width: 768px) {
@@ -77,6 +77,49 @@
 
     span {
       color: #e4212a;
+    }
+  }
+}
+
+.Speakers {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.5em;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: 425px) {
+    grid-template-columns: 1fr;
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 7px;
+  }
+
+  .Speaker {
+    border-radius: 7px;
+    background-color: #223645;
+    padding: 0.5em;
+    padding-bottom: 1em;
+    text-align: center;
+
+    h3 {
+      font-weight: 400;
+      font-size: 0.95em;
+      margin-top: 0.5em;
+    }
+
+    h3,
+    span {
+      color: #ffffff;
+    }
+
+    span {
+      font-size: 0.85em;
     }
   }
 }
