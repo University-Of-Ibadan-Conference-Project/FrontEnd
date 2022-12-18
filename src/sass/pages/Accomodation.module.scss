@@ -1,11 +1,11 @@
 .ActivityCard {
   background: #ffffff;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-    rgba(6, 24, 44, 0.65) 0px 3px 2px -1px,
+    rgba(6, 24, 44, 0.65) 0px 3px 5px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
   border-radius: 24px;
   width: 60%;
-  max-width: 1440px;
+  font-size: medium;
   margin: auto;
   padding: 2em 5em;
   box-sizing: border-box;
@@ -24,7 +24,7 @@
   border-radius: 7px;
 
   .img {
-    min-width: 170px;
+    min-width: 120px;
     height: 250px;
     background-image: url("https://static01.nyt.com/images/2019/03/24/travel/24trending-shophotels1/24trending-shophotels1-videoSixteenByNineJumbo1600.jpg");
     background-size: cover;
@@ -44,6 +44,22 @@
       text-align: center;
       margin: 0;
       padding-top: 1em;
+    }
+
+    .btn {
+      padding: 0.8rem;
+      font-size: 14px;
+      text-transform: uppercase;
+      border-radius: 4px;
+      font-weight: 400;
+      display: block;
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: transparent;
+    }
+
+    .btn:hover {
+      background-color: rgba(255, 255, 255, 0.12);
     }
   }
 }

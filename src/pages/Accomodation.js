@@ -19,9 +19,18 @@ const Accomodation = () => {
         <b>N8,000 and N30,000/night.</b>
       </div>
       <div className={styles.HotelDisplayCards}>
-        <HotelPrevCard name="Universirty of Ibadan Hotel" />
-        <HotelPrevCard name="Hotel at the University of Ibadan" />
-        <HotelPrevCard name="University of Ib, Bodija Branch hotel" />
+        <HotelPrevCard name="University of Ibadan Hotels, UI, Ibadan" />
+        <HotelPrevCard name="University of Ibadan Alumni Guest House" />
+        <HotelPrevCard name="Josiah's Inn, Opposite NISER" />
+        <HotelPrevCard name="Plaza Park Hotel, Bodija" />
+        <HotelPrevCard name="Christian Guest House, Samonda, Ibadan" />
+        <HotelPrevCard name="Davis Hotel, Old Bodija, Ibadan" />
+        <HotelPrevCard name="Pastoral Institute, Bodija Ibadan" />
+        <HotelPrevCard name="LABOD Hotel Old Bodija, Ibadan." />
+        <HotelPrevCard name="NUT Guest house, Samonda, Ibadan." />
+        <HotelPrevCard name="Institute of Church Guest House, Samonda, Ibadan." />
+        <HotelPrevCard name="De Executive Hotel, Off Osuntokun, Bodija, Ibadan." />
+        <HotelPrevCard name="Grace and Suites Hotel, Aare Avenue, Bodija Ibadan." />
       </div>
     </div>
   );
@@ -32,6 +41,7 @@ const HotelPrevCard = ({ name }) => (
     <div className={styles.img}></div>
     <div className={styles.content}>
       <h3>{name ? name : "Turkey"}</h3>
+      <button className={styles.btn}>Show Map</button>
     </div>
   </div>
 );
