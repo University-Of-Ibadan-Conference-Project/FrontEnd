@@ -1,12 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Dropdown.css";
+import "./Dropdown.scss";
 import { FaCaretDown } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 const Dropdown = () => {
   const [isActive, SetisActive] = useState(false);
+  let menuRef = useRef();
+
+  useEffect(() => {
+    let handler = (e) => {
+      if (!menuRef.current.contains(e.target)) {
+        SetisActive(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handler);
+
+    return () => {
+      document.removeEventListener("mousedown", handler);
+    };
+  });
+
   return (
-    <div className="dropdown">
+    <div className="dropdown" ref={menuRef}>
       <div className="dropdown-btn" onClick={() => SetisActive(!isActive)}>
         Call For Papers
         <FaCaretDown color="#fff" className={"icon"} />

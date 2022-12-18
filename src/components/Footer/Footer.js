@@ -28,7 +28,7 @@ export default function Footer() {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/submit-abstract">Submit Abstract</Link>
+                <Link to="/submit-abstract">Call For Papers</Link>
               </li>
               <li>
                 <Link to="/login">Login</Link>
