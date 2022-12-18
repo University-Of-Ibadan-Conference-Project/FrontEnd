@@ -69,7 +69,20 @@ function Navbar({ navVisibility, setNavVisibility }) {
         </li>
         <li>
           <Link className="link" to={"/submit-abstract"}>
-            Submit Abstract
+            <p style={{ color: activeNav === "/submit-abstract" ? color : "" }}>
+              {" "}
+              Submit Abstract
+            </p>
+          </Link>
+        </li>
+        <li>
+          <Link className="link" to={"/faq"}>
+            <p style={{ color: activeNav === "/faq" ? color : "" }}> FAQ</p>
+          </Link>
+        </li>
+        <li>
+          <Link className="link" to={"/blog"}>
+            <p style={{ color: activeNav === "/blog" ? color : "" }}> Blog</p>
           </Link>
         </li>
         <li>
