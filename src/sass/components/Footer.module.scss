@@ -1,7 +1,12 @@
 .Footer {
   padding: 4em 0;
-  background-color: black;
+  background-image: url("./../../assets/heroImg.png");
+
   color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(50, 50, 50, 0.458);
+  background-blend-mode: multiply;
 
   &Data {
     display: grid;
