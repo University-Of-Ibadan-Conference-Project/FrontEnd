@@ -13,7 +13,7 @@ const CountDownTimer = () => {
 
   useEffect(() => {
     let countdown = () => {
-      let date = +new Date("12/15/2022");
+      let date = +new Date("12/30/2022");
       let difference = date - +new Date();
       if (difference < 1) {
         setState((prevState) => ({ ...prevState, timeUp: true }));

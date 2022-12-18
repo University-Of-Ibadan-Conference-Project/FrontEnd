@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
+import Dropdown from "../Dropdown/Dropdown";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import uiLogo from "./../../assets/img/v2-logo.png";
@@ -36,12 +37,7 @@ function Navbar({ navVisibility, setNavVisibility }) {
           </Link>
         </li>
         <li>
-          <Link className="link" to={"/accomodation"}>
-            <p style={{ color: activeNav === "/accomodation" ? color : "" }}>
-              {" "}
-              Accomodation
-            </p>
-          </Link>
+          <Dropdown />
         </li>
         <li>
           <Link className="link" to={"/committee"}>
@@ -68,10 +64,16 @@ function Navbar({ navVisibility, setNavVisibility }) {
           </Link>
         </li>
         <li>
-          <Link className="link" to={"/submit-abstract"}>
-            Submit Abstract
+          <Link className="link" to={"/accomodation"}>
+            <p style={{ color: activeNav === "/accomodation" ? color : "" }}>
+              {" "}
+              Accomodation
+            </p>
           </Link>
         </li>
+        {/* <Link className="link" to={"/submit-abstract"}>
+            Call For Papers
+          </Link> */}
         <li>
           <Link className="link" to={"/contact-us"}>
             Contact Us
