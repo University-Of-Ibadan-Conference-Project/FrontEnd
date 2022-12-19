@@ -28,6 +28,7 @@ export default function Subscribe() {
             type={"email"}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            placeholder="Email"
           />
           <button className={styles.Button} type="submit">
             Subscribe
