@@ -19,9 +19,16 @@
         margin-bottom: 30px;
       }
     }
+    .sections {
+      width: 100%;
+      textarea {
+        height: 300px;
+      }
+    }
     input,
     select,
-    button {
+    button,
+    textarea {
       display: block;
       padding: 13px 0 13px 8px;
       width: 100%;
