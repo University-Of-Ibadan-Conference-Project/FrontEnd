@@ -21,16 +21,16 @@ function Navbar({ navVisibility, setNavVisibility }) {
       window.onscroll = () => {};
     }
   }, [navVisibility]);
-  const color = "#FF7700";
+  const color = "#cfcfcf";
 
   return (
     <div className={styles.MainNav}>
+      <h2>
+        <Link to={"/"}>
+          <img src={uiLogo} alt="University of Ibadan" />
+        </Link>
+      </h2>
       <ul className={navVisibility ? styles.visibleNav : styles.inVisibleNav}>
-        <h2>
-          <Link to={"/"}>
-            <img src={uiLogo} alt="University of Ibadan" />
-          </Link>
-        </h2>
         <li>
           <Link className="link" to={"/"}>
             <p style={{ color: activeNav === "/" ? color : "" }}>Home</p>
@@ -105,7 +105,6 @@ function Navbar({ navVisibility, setNavVisibility }) {
           className={styles.Checkbox}
           onClick={() => setNavVisibility((visibility) => !visibility)}
         >
-          <span className={styles.hamburger_bars}></span>
           <span className={styles.hamburger_bars}></span>
           <span className={styles.hamburger_bars}></span>
           <span className={styles.hamburger_bars}></span>
