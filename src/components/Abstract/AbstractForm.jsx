@@ -11,35 +11,30 @@ const AbstractForm = () => {
         <div className="section">
           <div className="section-1">
             <label htmlFor="title">Title of the Abstract</label>
-            <input type="text" placeholder="First Name" id="title" />
+            <input type="text" placeholder="Abstract Title" id="title" />
           </div>
           <div className="section-2">
-            <label htmlFor="name">Author{`'`}s Name</label>
-            <input type="text" placeholder="Last Name" id="name" />
+            <label htmlFor="name">Corresponding Author{`'`}s Name</label>
+            <input type="text" placeholder="Full Name" id="name" />
           </div>
         </div>
         <div className="section">
           <div className="section-1">
-            <label htmlFor="email">Author{`'`}s Email</label>
+            <label htmlFor="email">Corresponding Author{`'`}s Email</label>
             <input type="email" placeholder="example@example.com" id="email" />
           </div>
           <div className="section-2">
-            <label htmlFor="phone no">Phone Number</label>
+            <label htmlFor="phone no">
+              Corresponding Author{`'`}s Phone Number
+            </label>
             <input type="number" placeholder="Enter your phone number" />
           </div>
         </div>
 
         <div className="section">
           <div className="section-1">
-            <label htmlFor="nationality">Nationality</label>
-            <select>
-              <option value=""></option>
-              <option value="bkf">Burkina Faso</option>
-              <option value="ngr">Nigeria</option>
-              <option value="cam">Cameroun</option>
-              <option value="usa">United States of America</option>
-              <option value="brz">Brazil</option>
-            </select>
+            <label htmlFor="co">Co Authors</label>
+            <input type="text" placeholder="Co Authors" id="name" />
           </div>
           <div className="section-2">
             <label htmlFor="name">Institution</label>
@@ -68,17 +63,21 @@ const AbstractForm = () => {
             </select>
           </div>
           <div className="section-2">
-            <label htmlFor="part">Participant Type</label>
+            <label htmlFor="nationality">Nationality</label>
             <select>
               <option value=""></option>
-              <option value="Physical">Physical</option>
-              <option value="Virtual">Virtual</option>
+              <option value="bkf">Burkina Faso</option>
+              <option value="ngr">Nigeria</option>
+              <option value="cam">Cameroun</option>
+              <option value="usa">United States of America</option>
+              <option value="brz">Brazil</option>
             </select>
           </div>
         </div>
         <div className="section-1">
           <label htmlFor="file">
             Attach the file of your abstract according to the abstract template
+            (File Size must not be greater than 5MB)
           </label>
           <input type="file" />
         </div>
