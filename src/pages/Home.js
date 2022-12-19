@@ -12,7 +12,9 @@ const Home = () => {
             </h2>
             <h2>
               INTERNATIONAL CONFERENCE ON <br />
-              SCIENTIFIC RESEARCH IN NIGERIA
+              <span className={styles.Submaintheme}>
+                SCIENTIFIC RESEARCH IN NIGERIA
+              </span>
             </h2>
           </div>
           <p className={styles.Hero_theme}>
