@@ -74,6 +74,10 @@ const AbstractForm = () => {
             </select>
           </div>
         </div>
+        <div className="sections">
+          <label htmlFor="body">Abtsract Body</label>
+          <textarea placeholder="Your Abstract body here"></textarea>
+        </div>
         <div className="section-1">
           <label htmlFor="file">
             Attach the file of your abstract according to the abstract template
