@@ -79,6 +79,11 @@ function Navbar({ navVisibility, setNavVisibility }) {
             Contact Us
           </Link>{" "}
         </li>
+        <li>
+          <Link className="link" to={"/faq"}>
+            <p style={{ color: activeNav === "/faq" ? color : "" }}> FAQ</p>
+          </Link>
+        </li>
       </ul>
       <div className={styles.connect}>
         <span>
