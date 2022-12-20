@@ -12,6 +12,7 @@ import Register from "./pages/Register";
 import Footer from "./components/Footer/Footer";
 import Faq from "./pages/Faq";
 import Blog from "./pages/Blog";
+import Contact from "./components/Contact/Contact";
 
 const App = () => {
   const location = useLocation();
@@ -27,7 +28,7 @@ const App = () => {
     setTimeout(() => {
       spinner.style.display = "none";
       setLoading(false);
-    }, 9000);
+    }, 1000);
   }
 
   return (
@@ -48,6 +49,7 @@ const App = () => {
           <Route element={<Register />} path="/register" />
           <Route element={<Faq />} path="/faq" />
           <Route element={<Blog />} path="/blog" />
+          <Route element={<Contact />} path="/contact-us" />
         </Routes>
         <Footer />
       </>
