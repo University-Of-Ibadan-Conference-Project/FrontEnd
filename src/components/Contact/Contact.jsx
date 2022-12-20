@@ -3,7 +3,7 @@ import "../../sass/components/contact.scss";
 
 const Contact = () => {
   return (
-    <section>
+    <section className="contactPage">
       <div className="body">
         <h2>Get in touch</h2>
         <div className="mail">
