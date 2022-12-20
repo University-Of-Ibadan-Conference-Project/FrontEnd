@@ -12,7 +12,9 @@ const Home = () => {
             </h2>
             <h2>
               INTERNATIONAL CONFERENCE ON <br />
-              SCIENTIFIC RESEARCH IN NIGERIA
+              <span className={styles.Submaintheme}>
+                SCIENTIFIC RESEARCH IN NIGERIA
+              </span>
             </h2>
           </div>
           <p className={styles.Hero_theme}>
@@ -53,7 +55,32 @@ const Home = () => {
           everything the hybrid platform has to offer.
         </p>
       </div>
+
+      <div className={styles.HomeInfo}>
+        <h2>SPEAKERS</h2>
+        <div className={styles.Speakers}>
+          <KeynoteSpeaker />
+          <KeynoteSpeaker />
+          <KeynoteSpeaker />
+          <KeynoteSpeaker />
+          <KeynoteSpeaker />
+          <KeynoteSpeaker />
+        </div>
+      </div>
     </>
+  );
+};
+
+const KeynoteSpeaker = () => {
+  return (
+    <div className={styles.Speaker}>
+      <img
+        src="https://harnishdesign.net/demo/html/scott/images/team/leader-7.jpg"
+        alt="keynote speaker"
+      />
+      <h3>FIRSTNAME LASTNAME</h3>
+      <span>KeyNote Speaker Title</span>
+    </div>
   );
 };
 

@@ -27,3 +27,23 @@
     }
   }
 }
+
+@media (max-width: 515px) {
+  .CommonHero {
+    &Info {
+      h1 {
+        font-size: 2em;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .CommonHero {
+    &Info {
+      h1 {
+        font-size: 1.3em;
+      }
+    }
+  }
+}

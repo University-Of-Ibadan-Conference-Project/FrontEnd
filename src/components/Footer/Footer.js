@@ -28,7 +28,7 @@ export default function Footer() {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/submit-abstract">Submit Abstract</Link>
+                <Link to="/submit-abstract">Call For Papers</Link>
               </li>
               <li>
                 <Link to="/login">Login</Link>
@@ -78,7 +78,8 @@ export default function Footer() {
           </div>
         </div>
         <span className={styles.FooterCopyRight}>
-          Copyright &copy; {new Date().getFullYear()} - University of Ibadan
+          Copyright &copy; {new Date().getFullYear()} - Department Of Computer
+          Science - University of Ibadan
         </span>
       </div>
     </>

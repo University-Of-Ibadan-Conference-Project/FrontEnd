@@ -70,6 +70,10 @@
       padding-left: 0;
       border: none;
 
+      li a {
+        color: #ffffff !important;
+      }
+
       &.visibleNav {
         left: 0;
       }
@@ -105,7 +109,7 @@
         }
 
         &:nth-of-type(1) {
-          margin-top: 6em;
+          margin-top: 1em;
         }
 
         &:nth-last-of-type(1) {
@@ -209,35 +213,14 @@
     }
 
     &_bars {
-      height: 3px;
-      width: 17.5px;
+      height: 5px;
+      width: 35px;
       border-radius: 40px;
       display: inline-block;
-      background-color: #000000;
-      margin: 0 -2em;
+      background-color: #ffffff;
+      margin: 2px 0;
       cursor: pointer;
       transition: all 0.3s linear;
-      background-color: white;
-      position: absolute;
-
-      &:nth-of-type(1) {
-        transform: rotate(-45deg);
-        top: -5px;
-        left: 14px;
-      }
-      &:nth-of-type(2) {
-        transform: rotate(-45deg);
-        top: -5px;
-      }
-      &:nth-of-type(3) {
-        transform: rotate(45deg);
-        top: 5.3px;
-      }
-      &:nth-of-type(4) {
-        transform: rotate(45deg);
-        top: 5.3px;
-        left: 13.95px;
-      }
     }
 
     &_check {
@@ -263,6 +246,29 @@
         & .hamburger_bars:nth-of-type(4) {
           transform: rotate(-45deg);
           left: 13px;
+        }
+      }
+    }
+
+    &_check {
+      position: fixed;
+      margin: 0;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transform: translateX(99px);
+
+      &_checked + .Checkbox {
+        & .hamburger_bars:nth-of-type(1) {
+          transform: rotate(45deg);
+        }
+        & .hamburger_bars:nth-of-type(2) {
+          opacity: 0;
+        }
+        & .hamburger_bars:nth-of-type(3) {
+          position: absolute;
+          top: 1px;
+          transform: rotate(-45deg);
         }
       }
     }
