@@ -50,10 +50,10 @@ const Home = () => {
         <div className={styles.Speakers}>
           <KeynoteSpeaker name="Full Name" isKeyNoteSpeaker={true} />
           <KeynoteSpeaker name="Full Name" isKeyNoteSpeaker={true} />
-          <KeynoteSpeaker isKeyNoteSpeaker={false} name="Any Name Works" />
-          <KeynoteSpeaker isKeyNoteSpeaker={false} name="Any Name Works" />
-          <KeynoteSpeaker isKeyNoteSpeaker={false} name="Any Name Works" />
-          <KeynoteSpeaker isKeyNoteSpeaker={false} name="Any Name Works" />
+          <KeynoteSpeaker isKeyNoteSpeaker={false} name="Full Name" />
+          <KeynoteSpeaker isKeyNoteSpeaker={false} name="Full Name" />
+          <KeynoteSpeaker isKeyNoteSpeaker={false} name="Full Name" />
+          <KeynoteSpeaker isKeyNoteSpeaker={false} name="Full Name" />
         </div>
       </div>
     </>
