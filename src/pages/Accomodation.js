@@ -82,7 +82,7 @@ const HotelPrevCard = ({ mapLink, name }) => (
     data-aos-easing="ease-out-cubic"
     data-aos-duration="2500"
   >
-    <div className={styles.img12}></div>
+    <div className={styles.hotelPreview}></div>
     <div className={styles.content}>
       <h3>{name}</h3>
       <a href={mapLink} target="_blank" rel="noreferrer" className={styles.btn}>
