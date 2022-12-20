@@ -1,15 +1,16 @@
 import React from "react";
-import aquaculture from "/FrontEnd/src/assets/conference pictures/aquaculture.jpg";
-import agriculture from "/FrontEnd/src/assets/conference pictures/agriculture.jpg";
-import biotech from "/FrontEnd/src/assets/conference pictures/biotech.jpg";
-import minerals from "/FrontEnd/src/assets/conference pictures/minerals.jpg";
-import pollution from "/FrontEnd/src/assets/conference pictures/pollution.jpg";
-import nanotech from "/FrontEnd/src/assets/conference pictures/nanotech.jpg";
-import resources from "/FrontEnd/src/assets/conference pictures/natural-resources.jpg";
-import security from "/FrontEnd/src/assets/conference pictures/science-security.jpg";
-import math from "/FrontEnd/src/assets/conference pictures/math-modelling.jpg";
-import medicine from "/FrontEnd/src/assets/conference pictures/medicine.jpeg";
-import climate from "/FrontEnd/src/assets/conference pictures/climate-change.jpg";
+import aquaculture from "./../../assets/conference pictures/aquaculture.jpg";
+import agriculture from "./../../assets/conference pictures/agriculture.jpg";
+import biotech from "./../../assets/conference pictures/biotech.jpg";
+import minerals from "./../../assets/conference pictures/minerals.jpg";
+import pollution from "./../../assets/conference pictures/pollution.jpg";
+import nanotech from "./../../assets/conference pictures/nanotech.jpg";
+import resources from "./../../assets/conference pictures/natural-resources.jpg";
+import security from "./../../assets/conference pictures/science-security.jpg";
+import math from "./../../assets/conference pictures/math-modelling.jpg";
+import medicine from "./../../assets/conference pictures/medicine.jpeg";
+import climate from "./../../assets/conference pictures/climate-change.jpg";
+
 import "./SubTheme.css";
 const SubTheme = () => {
   const events = [
