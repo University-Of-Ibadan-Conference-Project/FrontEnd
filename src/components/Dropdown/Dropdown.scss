@@ -12,6 +12,7 @@
   align-items: center;
   color: white;
   justify-content: space-between;
+  cursor: pointer;
   // box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.06);
 }
 
@@ -22,12 +23,12 @@
   position: absolute;
   /* margin-top: 41px; */
   top: 170%;
-  width: 10rem;
+  width: 14rem;
   padding: 15px;
-  left: -15px;
+  left: -45px;
   transition: all 0.3s;
   background-color: #fff;
-  width: 200px;
+  // width: 200px;
   border-radius: 5px;
   /* border: 1px solid red; */
   box-shadow: 3px 3px 10px rgba(174, 171, 171, 0.06);
@@ -48,5 +49,5 @@
 
 .dropdown-content .item {
   text-decoration: none;
-  color: #000;
+  color: #000 !important;
 }
