@@ -30,40 +30,20 @@ const RegisterForm = () => {
         </div>
         <div className="section">
           <div className="section-1">
-            <label htmlFor="dob">Date Of Birth</label>
-            <input type="date" name="Date of Birth" />
-          </div>
-          <div className="section-2">
-            <label htmlFor="nationality">Nationality</label>
-            <select placeholder="Choose your country">
-              <option value=""></option>
-              <option value="bkf">Burkina Faso</option>
-              <option value="ngr">Nigeria</option>
-              <option value="cam">Cameroun</option>
-              <option value="usa">United States of America</option>
-              <option value="brz">Brazil</option>
-            </select>
-          </div>
-        </div>
-        <div className="section">
-          <div className="section-1">
             <label htmlFor="name">Department</label>
             <input type="text" placeholder="Enter your department" />
           </div>
           <div className="section-2">
-            <label htmlFor="name">Institution</label>
-            <select>
-              <option value=""></option>
-              <option value="ui">University of Ibadan</option>
-              <option value="">...</option>
-              <option value="">...</option>
-              <option value="">...</option>
-              <option value="">...</option>
-            </select>
+            <label htmlFor="nationality">Nationality</label>
+            <input type="text" placeholder="Nationality" />
           </div>
         </div>
         <div className="section">
           <div className="section-1">
+            <label htmlFor="name">Institution</label>
+            <input type="text" placeholder="Institution" />
+          </div>
+          <div className="section-2">
             <label htmlFor="name">Address</label>
             <input
               type="text"
@@ -71,7 +51,9 @@ const RegisterForm = () => {
               className="address"
             />
           </div>
-          <div className="section-2">
+        </div>
+        <div className="section">
+          <div className="section-1">
             <label htmlFor="part">Participant Type</label>
             <div>
               <input type="radio" name="part" />

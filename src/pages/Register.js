@@ -5,7 +5,7 @@ import RegisterForm from "../components/Register/RegisterForm";
 
 export default function Register() {
   return (
-    <section>
+    <div>
       <CommonHero
         title="Register with us."
         bg="https://www.eventpro.net/images/online-event-attendee-registration.jpg"
@@ -23,6 +23,6 @@ export default function Register() {
         into the conference venue.
       </div>
       <RegisterForm />
-    </section>
+    </div>
   );
 }
