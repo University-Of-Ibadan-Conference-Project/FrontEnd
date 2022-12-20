@@ -70,6 +70,8 @@ const Home = () => {
           <KeynoteSpeaker isKeyNoteSpeaker={false} name="Full Name" />
           <KeynoteSpeaker isKeyNoteSpeaker={false} name="Full Name" />
           <KeynoteSpeaker isKeyNoteSpeaker={false} name="Full Name" />
+          <KeynoteSpeaker isKeyNoteSpeaker={false} name="Full Name" />
+          <KeynoteSpeaker isKeyNoteSpeaker={false} name="Full Name" />
         </div>
       </div>
 
