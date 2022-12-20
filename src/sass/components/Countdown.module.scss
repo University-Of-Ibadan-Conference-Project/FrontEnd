@@ -1,9 +1,12 @@
 .CountDownTimer {
   display: grid;
+  width: 60%;
   grid-template-columns: repeat(4, 1fr);
-  top: -4.5em;
-  gap: 2em;
-  margin: 4em auto 2em;
+  margin-top: -4.5em;
+  gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
 
   @media screen and (max-width: 768px) {
     top: -2.5em;
@@ -20,14 +23,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: black;
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   border-radius: 4px;
   font-weight: 600;
+  background: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%);
 
   h2 {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 2.5em;
     margin: 0;
   }
