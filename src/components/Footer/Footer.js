@@ -2,12 +2,12 @@ import { RiFacebookCircleFill, RiTwitterFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import styles from "./../../sass/components/Footer.module.scss";
 import logo from "./../../assets/img/v2-logo.png";
-import Subscribe from "../Subscribe/Subscribe";
+// import Subscribe from "../Subscribe/Subscribe";
 
 export default function Footer() {
   return (
     <>
-      <Subscribe />
+      {/* <Subscribe /> */}
       <div className={styles.Footer}>
         <div className={styles.FooterData}>
           <div>
