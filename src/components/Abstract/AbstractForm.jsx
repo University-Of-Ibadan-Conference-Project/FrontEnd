@@ -74,6 +74,16 @@ const AbstractForm = () => {
             </select>
           </div>
         </div>
+        <div className="section">
+          <div className="section-1">
+            <label htmlFor="rese">Research Area</label>
+            <input type="text" placeholder="Research Area" />
+          </div>
+          <div className="section-2">
+            <label htmlFor="rese">Keywords Field</label>
+            <input type="text" placeholder="Keywords" />
+          </div>
+        </div>
         <div className="sections">
           <label htmlFor="body">Abtsract Body</label>
           <textarea placeholder="Your Abstract body here"></textarea>
