@@ -37,31 +37,57 @@ function Navbar({ navVisibility, setNavVisibility }) {
           </Link>
         </li>
         <li>
-          <Dropdown />
+          <Dropdown
+            dropdownName="Call For Papers"
+            dropdownContent={[
+              {
+                name: "Submission Guideline",
+                route: "/",
+              },
+              {
+                name: "Abstract Submission",
+                route: "/submit-abstract",
+              },
+              {
+                name: "Presentation Guideline",
+                route: "/",
+              },
+              {
+                name: "Registration Guideline",
+                route: "/",
+              },
+            ]}
+          />
         </li>
         <li>
-          <Link className="link" to={"/committee"}>
-            <p style={{ color: activeNav === "/committee" ? color : "" }}>
-              {" "}
-              Committees
-            </p>
-          </Link>
+          <Dropdown
+            dropdownName="Advertisement"
+            dropdownContent={[
+              {
+                name: "Order of Programme",
+                route: "/programme",
+              },
+              {
+                name: "Committees",
+                route: "/committee",
+              },
+            ]}
+          />
         </li>
         <li>
-          <Link className="link" to={"/advertisement"}>
-            <p style={{ color: activeNav === "/advertisement" ? color : "" }}>
-              {" "}
-              Advertisement
-            </p>
-          </Link>
-        </li>
-        <li>
-          <Link className="link" to={"/about-us"}>
-            <p style={{ color: activeNav === "/about-us" ? color : "" }}>
-              {" "}
-              About
-            </p>
-          </Link>
+          <Dropdown
+            dropdownName="Programme"
+            dropdownContent={[
+              {
+                name: "Order of Programme",
+                route: "/programme",
+              },
+              {
+                name: "Committees",
+                route: "/committee",
+              },
+            ]}
+          />
         </li>
         <li>
           <Link className="link" to={"/accomodation"}>

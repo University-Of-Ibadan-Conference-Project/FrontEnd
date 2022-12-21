@@ -21,7 +21,7 @@ const SubTheme = () => {
     },
     {
       id: 2,
-      title: "Medicinal plants and Drug development",
+      title: "Medicinal plants / Drug development",
       backgroundImage: medicine,
     },
     {
@@ -77,7 +77,7 @@ const SubTheme = () => {
   ];
   return (
     <div className="sub-theme">
-      <h2>Event Sub-Theme</h2>
+      <h2>Sub-Theme</h2>
       <div className="events">
         {events.map((event) => (
           <div key={event.id} className="event-card">

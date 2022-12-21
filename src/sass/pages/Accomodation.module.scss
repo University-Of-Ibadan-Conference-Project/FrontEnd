@@ -9,13 +9,16 @@
   padding: 2em 2em;
   line-height: 27px;
   box-sizing: border-box;
-  display: grid;
-  grid-area: auto;
   color: #364049;
-  text-align: center;
+  // text-align: center;
+  font-weight: bold;
   position: relative;
   top: -4.5em;
   margin-bottom: -4em;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .HotelDisplayCards {
@@ -32,70 +35,8 @@
     // width: 210px;
     border-radius: 7px;
 
-    &:nth-of-type(1) {
-      .hotelPreview {
-        background-image: url("https://static01.nyt.com/images/2019/03/24/travel/24trending-shophotels1/24trending-shophotels1-videoSixteenByNineJumbo1600.jpg");
-      }
-    }
-    &:nth-of-type(2) {
-      .hotelPreview {
-        background-image: url("https://images.unsplash.com/photo-1578898886225-c7c894047899?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aG90ZWwlMjBiZWRyb29tfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
-      }
-    }
-    &:nth-of-type(3) {
-      .hotelPreview {
-        background-image: url("https://images.unsplash.com/flagged/photo-1556438758-8d49568ce18e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdGVsJTIwYmVkcm9vbXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
-      }
-    }
-    &:nth-of-type(4) {
-      .hotelPreview {
-        background-image: url("https://images.unsplash.com/photo-1631049552057-403cdb8f0658?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGhvdGVsJTIwYmVkcm9vbXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
-      }
-    }
-    &:nth-of-type(5) {
-      .hotelPreview {
-        background-image: url("https://images.unsplash.com/photo-1609766857041-ed402ea8069a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGhvdGVsJTIwYmVkcm9vbXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
-      }
-    }
-    &:nth-of-type(6) {
-      .hotelPreview {
-        background-image: url("https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aG90ZWwlMjBiZWRyb29tfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
-      }
-    }
-    &:nth-of-type(7) {
-      .hotelPreview {
-        background-image: url("https://images.unsplash.com/photo-1584132915807-fd1f5fbc078f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG90ZWwlMjBiZWRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
-      }
-    }
-    &:nth-of-type(8) {
-      .hotelPreview {
-        background-image: url("https://images.unsplash.com/photo-1626868449668-fb47a048d9cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGhvdGVsJTIwYmVkc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
-      }
-    }
-    &:nth-of-type(9) {
-      .hotelPreview {
-        background-image: url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fGhvdGVsJTIwYmVkc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
-      }
-    }
-    &:nth-of-type(10) {
-      .hotelPreview {
-        background-image: url("https://images.unsplash.com/photo-1592229505678-cf99a9908e03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fGhvdGVsJTIwYmVkc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
-      }
-    }
-    &:nth-of-type(11) {
-      .hotelPreview {
-        background-image: url("https://images.unsplash.com/photo-1611971263023-105938ce12ed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fGhvdGVsJTIwYmVkc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
-      }
-    }
-    &:nth-of-type(12) {
-      .hotelPreview {
-        background-image: url("https://static01.nyt.com/images/2019/03/24/travel/24trending-shophotels1/24trending-shophotels1-videoSixteenByNineJumbo1600.jpg");
-      }
-    }
-
     .hotelPreview {
       min-width: 230px;
-      height: 250px;
       background-size: cover;
       background-position: center;
       border-top-right-radius: 7px;
