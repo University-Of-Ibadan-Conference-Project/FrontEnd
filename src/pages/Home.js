@@ -21,8 +21,7 @@ const Home = () => {
           </p>
           <p className={styles.Hero_line}></p>
           <h6 className={styles.Hero_theme}>
-            THEME: &quot;Strengthening Scientific Research for National
-            Development&quot;
+            THEME: Strengthening Scientific Research for National Development
           </h6>
           <p className={styles.Hero_remarks}>
             The Faculty of Science is pleased to announce her 5th International
@@ -85,16 +84,15 @@ const Home = () => {
 const KeynoteSpeaker = ({ name, isKeyNoteSpeaker }) => {
   return (
     <div className={styles.Speaker}>
-      <img
-        src="https://harnishdesign.net/demo/html/scott/images/team/leader-7.jpg"
-        alt="keynote speaker"
-      />
-      <h5>{isKeyNoteSpeaker ? "KEYNOTE" : "PLENARY"} SPEAKER</h5>
-      <h6>
-        <span>
-          <strong>{name}</strong>
-        </span>
-      </h6>
+      <a href="https://www.google.com" target={"_blank"} rel="noreferrer">
+        <h5>{name}</h5>
+        <h6>
+          <span>
+            {isKeyNoteSpeaker ? "KEYNOTE" : "PLENARY"} SPEAKER
+            {/* <strong></strong> */}
+          </span>
+        </h6>
+      </a>
     </div>
   );
 };

@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 .Home {
   text-align: center;
   color: #ffffff;
   align-items: center;
   align-content: center;
   justify-content: center;
-
 
   .Hero {
     background-image: url("https://pbs.twimg.com/media/D_5zisFX4AA1rc8.jpg:large");
@@ -32,85 +31,81 @@
       h2 {
         font-family: poppins, sans-serif;
         color: #cfc547;
-        text-shadow: 10px 10px 25px rgb(81,67,21),
-            -10px 10px 25px rgb(81,67,21),
-            -10px -10px 25px rgb(81,67,21),
-            10px -10px 25px rgb(81,67,21);
+        text-shadow: 10px 10px 25px rgb(81, 67, 21),
+          -10px 10px 25px rgb(81, 67, 21), -10px -10px 25px rgb(81, 67, 21),
+          10px -10px 25px rgb(81, 67, 21);
         font-size: 65px;
       }
-      
-      h3{
+
+      h3 {
         font-family: poppins, sans-serif;
         font-size: 38px;
       }
 
-      @media (max-width: 1024px){
-        h3{
+      @media (max-width: 1024px) {
+        h3 {
           font-size: 30px;
         }
-        h2{
+        h2 {
           font-size: 55px;
         }
 
-      
-      @media (max-width: 425px){
-        h2{
-          font-size: 43px;
+        @media (max-width: 425px) {
+          h2 {
+            font-size: 43px;
+          }
+
+          h3 {
+            font-size: 25px;
+          }
         }
 
-        h3{
-          font-size: 25px;
+        @media (max-width: 320px) {
+          h2 {
+            font-size: 36px;
+          }
+
+          h3 {
+            font-size: 21px;
+          }
         }
-      }
-
-      @media (max-width: 320px){
-        h2{
-          font-size: 36px;
-        }
-
-        h3{
-          font-size: 21px;
-        }
-      }
-
-
       }
     }
 
-    &_year{
+    &_year {
       font-family: poppins, sans-serif;
       font-size: 47px;
       text-shadow: 4px 4px #000000;
       font-weight: 700;
 
-      @media (max-width: 425px){
+      @media (max-width: 425px) {
         font-size: 35px;
         font-weight: 600;
       }
 
-      @media (max-width: 375px){
+      @media (max-width: 375px) {
         font-size: 30px;
         font-weight: 600;
       }
 
-      @media (max-width: 320px){
+      @media (max-width: 320px) {
         font-size: 28px;
         font-weight: 600;
       }
     }
 
-    &_line{
+    &_line {
       width: 530px;
       height: 4px;
       background: #ffffff;
       margin-left: auto;
       margin-right: auto;
 
-      @media screen and (max-width: 425px){
+      @media screen and (max-width: 425px) {
         width: 300px;
       }
 
-      @media screen and (max-width: 320px){
+      @media screen and (max-width: 320px) {
         width: 260px;
       }
     }
@@ -131,7 +126,7 @@
         width: 95%;
       }
 
-      @media screen and (max-width: 450px){
+      @media screen and (max-width: 450px) {
         width: 100%;
         font-size: 20px;
         font-weight: 700;
@@ -162,7 +157,7 @@
       font-size: 2em;
       color: #223645;
     }
-    p{
+    p {
       text-align: justify;
     }
     span {
@@ -185,23 +180,22 @@
     grid-template-columns: 1fr;
   }
 
-  img {
-    max-width: 100%;
-    border-radius: 7px;
-  }
-
   .Speaker {
     border-radius: 7px;
-    background-color: #223645;
+    background-color: #0e2431;
     padding: 0.5em;
     padding-bottom: 1em;
     text-align: center;
+
+    a {
+      text-decoration: none;
+    }
 
     h5 {
       font-weight: 400;
       font-family: poppins, sans-serif;
       font-size: 16px;
-      color: #fa0368;
+      color: #ffffff;
       margin-top: 0.5em;
     }
 
@@ -210,7 +204,8 @@
       color: #ffffff;
     }
 
-    h6, strong {
+    h6,
+    strong {
       font-size: 14px;
       font-weight: 700;
       font-family: poppins, sans-serif;

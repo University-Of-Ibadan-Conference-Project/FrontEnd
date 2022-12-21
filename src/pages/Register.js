@@ -12,15 +12,20 @@ export default function Register() {
       />
       <div className={styles.ActivityCard}>
         The registration fee covering the cost of conference materials, lunch
-        and tea breaks is <b>N25, 000.00 ($200)</b>. The registration fee for
-        students who are not academic staff and with identity cards is{" "}
-        <b>N15,000.00 ($100).</b>
-        Please pay the registration fee to the conference account (
-        <b>Name of account:</b> University of Ibadan, Faculty of Science Alumni
-        Association, <b>Bank:</b> Union Bank, <b>Account Number:</b> 0109363898)
-        and upload the receipt of your payment <a href="https://">here</a>
-        <br></br>Only registered participants and invited guests will be allowed
-        into the conference venue.
+        and tea breaks is N25, 000.00 ($200). The registration fee for students
+        who are not academic staff and with identity cards is N15,000.00 ($100).
+        Please pay the registration fee to the conference account ( Name of
+        account: University of Ibadan, Faculty of Science Alumni Association,
+        Bank: Union Bank, Account Number: 0109363898) and upload the receipt of
+        your payment{" "}
+        <a className={styles.ActivityCardLink} href="https://">
+          here
+        </a>
+        .
+        <p>
+          Only registered participants and invited guests will be allowed into
+          the conference venue.
+        </p>
       </div>
       <RegisterForm />
     </div>
