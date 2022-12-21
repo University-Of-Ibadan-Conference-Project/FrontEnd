@@ -33,23 +33,6 @@ const AbstractForm = () => {
 
         <div className="section">
           <div className="section-1">
-            <label htmlFor="co">Co Authors</label>
-            <input type="text" placeholder="Co Authors" id="name" />
-          </div>
-          <div className="section-2">
-            <label htmlFor="name">Institution</label>
-            <select>
-              <option value=""></option>
-              <option value="ui">University of Ibadan</option>
-              <option value="">...</option>
-              <option value="">...</option>
-              <option value="">...</option>
-              <option value="">...</option>
-            </select>
-          </div>
-        </div>
-        <div className="section">
-          <div className="section-1">
             <label htmlFor="pre">Presentation Type</label>
             <select>
               <option value=""></option>
@@ -63,15 +46,24 @@ const AbstractForm = () => {
             </select>
           </div>
           <div className="section-2">
-            <label htmlFor="nationality">Nationality</label>
-            <select>
-              <option value=""></option>
-              <option value="bkf">Burkina Faso</option>
-              <option value="ngr">Nigeria</option>
-              <option value="cam">Cameroun</option>
-              <option value="usa">United States of America</option>
-              <option value="brz">Brazil</option>
-            </select>
+            <label htmlFor="name">Institution</label>
+            <input type="text" placeholder="Institution" />
+          </div>
+        </div>
+        <div className="section">
+          <div className="section-1">
+            <label htmlFor="co">
+              Co Authors Name (e.g First Name Last Name)
+            </label>
+            <input type="text" placeholder="Co Authors Name" id="co-author" />
+          </div>
+          <div className="section-2">
+            <label htmlFor="inst">Co Authors Institution</label>
+            <input
+              type="text"
+              placeholder="Co Authors Institution"
+              id="co-author"
+            />
           </div>
         </div>
         <div className="section">
