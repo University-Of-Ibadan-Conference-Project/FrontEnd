@@ -34,8 +34,8 @@ const RegisterForm = () => {
             <input type="text" placeholder="Enter your department" />
           </div>
           <div className="section-2">
-            <label htmlFor="nationality">Nationality</label>
-            <input type="text" placeholder="Nationality" />
+            <label htmlFor="nationality">Country</label>
+            <input type="text" placeholder="Country" />
           </div>
         </div>
         <div className="section">
