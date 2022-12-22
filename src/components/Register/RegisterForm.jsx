@@ -1,9 +1,32 @@
+import { useEffect, useState } from "react";
+import { Country } from "country-state-city";
+
 import "./../../sass/components/Form/Form.scss";
 
 const RegisterForm = () => {
+  // Country and state initialization state
+  const [countries, setCountries] = useState([]);
+
+  // Form Handling states
+  const [userSelectedCountry, setUserSelectedCountry] = useState("");
+
+  useEffect(() => {
+    const allCountries = Country.getAllCountries();
+    const countriesData = allCountries.map((country) => {
+      return { name: country.name, isoCode: country.isoCode };
+    });
+    setCountries(countriesData);
+  }, []);
+
+  const selectCountry = (e) => {
+    let country = e.target.value;
+    setUserSelectedCountry(country); // Set User selected country
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
+
   return (
     <div className="form-container">
       <h1>Register here</h1>
@@ -34,10 +57,20 @@ const RegisterForm = () => {
             <input type="text" placeholder="Enter your department" />
           </div>
           <div className="section-2">
-            <label htmlFor="nationality">Country</label>
-            <input type="text" placeholder="Country" />
+            <label htmlFor="part">Country</label>
+            <select onChange={selectCountry} value={userSelectedCountry}>
+              <option hidden={true} defaultValue="">
+                Choose country
+              </option>
+              {countries.map((country) => (
+                <option key={country.isoCode} value={country.name}>
+                  {country.name}
+                </option>
+              ))}
+            </select>
           </div>
         </div>
+
         <div className="section">
           <div className="section-1">
             <label htmlFor="name">Institution / Organisation</label>
