@@ -33,7 +33,7 @@ const Home = () => {
       <CountDownTimer />
 
       <div className={styles.HomeInfo}>
-        <h2>OVERVIEW</h2>
+        <h2>ANNOUNCEMENT</h2>
         <p>
           <span>
             The Faculty of Science is pleased to announce her 5th International
@@ -60,7 +60,7 @@ const Home = () => {
         </p>
       </div>
 
-      <div className={styles.HomeInfo}>
+      {/* <div className={styles.HomeInfo}>
         <h2>SPEAKERS</h2>
         <div className={styles.Speakers}>
           <KeynoteSpeaker name="Full Name" isKeyNoteSpeaker={true} />
@@ -72,7 +72,7 @@ const Home = () => {
           <KeynoteSpeaker isKeyNoteSpeaker={false} name="Full Name" />
           <KeynoteSpeaker isKeyNoteSpeaker={false} name="Full Name" />
         </div>
-      </div>
+      </div> */}
 
       {/* Event subtheme */}
 

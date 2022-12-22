@@ -77,7 +77,7 @@ const SubTheme = () => {
   ];
   return (
     <div className="sub-theme">
-      <h2>Sub-Theme</h2>
+      <h2>Sub-Themes</h2>
       <div className="events">
         {events.map((event) => (
           <div key={event.id} className="event-card">
