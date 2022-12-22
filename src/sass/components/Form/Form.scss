@@ -20,6 +20,22 @@
       &-2 {
         width: 45%;
         margin-bottom: 30px;
+        .btn {
+          width: 100%;
+          display: block;
+          padding: 13px 0 13px 8px;
+
+          margin-top: 10px;
+          border-radius: 6px;
+          border: 1px solid #004777;
+          transition: all ease-in-out 300ms;
+          &:hover {
+            border: 1px solid #00afb5;
+          }
+          &:focus {
+            outline: 0;
+          }
+        }
       }
     }
     .sections {
@@ -31,7 +47,7 @@
     }
     input,
     select,
-    button,
+    .submit,
     textarea {
       display: block;
       padding: 13px 0 13px 8px;
