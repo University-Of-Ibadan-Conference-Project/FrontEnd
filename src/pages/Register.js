@@ -12,12 +12,13 @@ export default function Register() {
       />
       <div className={styles.ActivityCard}>
         The registration fee covering the cost of conference materials, lunch
-        and tea breaks is N25, 000.00 ($200). The registration fee for students
-        who are not academic staff and with identity cards is N15,000.00 ($100).
-        Please pay the registration fee to the conference account ( Name of
-        account: University of Ibadan, Faculty of Science Alumni Association,
-        Bank: Union Bank, Account Number: 0109363898) and upload the receipt of
-        your payment{" "}
+        and tea breaks is N25, 000.00 ($200). The registration for international
+        paticipant is $100. The registration fee for students who are not
+        academic staff and with identity cards is N15,000.00 ($100). The
+        registration fee for international student is $50. Please pay the
+        registration fee to the conference account ( Name of account: University
+        of Ibadan, Faculty of Science Alumni Association, Bank: Union Bank,
+        Account Number: 0109363898) and upload the receipt of your payment{" "}
         <a className={styles.ActivityCardLink} href="https://">
           here
         </a>

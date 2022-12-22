@@ -40,7 +40,7 @@ const RegisterForm = () => {
         </div>
         <div className="section">
           <div className="section-1">
-            <label htmlFor="name">Institution</label>
+            <label htmlFor="name">Institution / Organisation</label>
             <input type="text" placeholder="Institution" />
           </div>
           <div className="section-2">

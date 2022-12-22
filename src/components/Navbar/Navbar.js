@@ -42,7 +42,7 @@ function Navbar({ navVisibility, setNavVisibility }) {
             dropdownContent={[
               {
                 name: "Submission Guideline",
-                route: "/",
+                route: "/submit-guidelines",
               },
               {
                 name: "Abstract Submission",
@@ -50,7 +50,7 @@ function Navbar({ navVisibility, setNavVisibility }) {
               },
               {
                 name: "Presentation Guideline",
-                route: "/",
+                route: "/presentation-guideline",
               },
               {
                 name: "Registration Guideline",

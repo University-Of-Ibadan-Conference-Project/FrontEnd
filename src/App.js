@@ -13,6 +13,8 @@ import Footer from "./components/Footer/Footer";
 import Faq from "./pages/Faq";
 import Blog from "./pages/Blog";
 import Contact from "./components/Contact/Contact";
+import SubmissionGuidlines from "./pages/SubmissionGuidlines";
+import PresentationGuidline from "./pages/PresentationGuideline";
 
 const App = () => {
   const location = useLocation();
@@ -22,39 +24,44 @@ const App = () => {
     if (navVisibility) setNavVisibility(false);
   }, [location]);
 
-  const [loading, setLoading] = useState(true);
-  const spinner = document.getElementById("spinner");
-  if (spinner) {
-    setTimeout(() => {
-      spinner.style.display = "none";
-      setLoading(false);
-    }, 1000);
-  }
+  // const [loading, setLoading] = useState(true);
+  // const spinner = document.getElementById("spinner");
+  // if (spinner) {
+  //   setTimeout(() => {
+  //     spinner.style.display = "none";
+  //     setLoading(false);
+  //   }, 1000);
+  // }
 
   return (
-    !loading && (
-      <>
-        <Navbar
-          navVisibility={navVisibility}
-          setNavVisibility={setNavVisibility}
+    // !loading && (
+    <>
+      <Navbar
+        navVisibility={navVisibility}
+        setNavVisibility={setNavVisibility}
+      />
+      <Routes>
+        <Route element={<Home />} path="/" />
+        <Route element={<Help />} path="/submit-abstract" />
+        <Route element={<SubmissionGuidlines />} path="/submit-guidelines" />
+        <Route
+          element={<PresentationGuidline />}
+          path="/presentation-guideline"
         />
-        <Routes>
-          <Route element={<Home />} path="/" />
-          <Route element={<Help />} path="/submit-abstract" />
-          <Route element={<Accomodation />} path="/accomodation" />
-          <Route element={<Advertisement />} path="/advertisement" />
-          <Route element={<Committee />} path="/committee" />
-          <Route element={<AboutUs />} path="/about-us" />
-          <Route element={<Login />} path="/login" />
-          <Route element={<Register />} path="/register" />
-          <Route element={<Faq />} path="/faq" />
-          <Route element={<Blog />} path="/blog" />
-          <Route element={<Contact />} path="/contact-us" />
-        </Routes>
-        <Footer />
-      </>
-    )
+        <Route element={<Accomodation />} path="/accomodation" />
+        <Route element={<Advertisement />} path="/advertisement" />
+        <Route element={<Committee />} path="/committee" />
+        <Route element={<AboutUs />} path="/about-us" />
+        <Route element={<Login />} path="/login" />
+        <Route element={<Register />} path="/register" />
+        <Route element={<Faq />} path="/faq" />
+        <Route element={<Blog />} path="/blog" />
+        <Route element={<Contact />} path="/contact-us" />
+      </Routes>
+      <Footer />
+    </>
   );
+  // );
 };
 
 export default App;
