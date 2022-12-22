@@ -55,18 +55,38 @@ const AbstractForm = () => {
           <div className="section-1">
             <label htmlFor="rese">Research Area</label>
             <select>
-              <option value="djdj">jdjdj</option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
+              <option value="Aquaculture and the Blue Economy">
+                Aquaculture and the Blue Economy
+              </option>
+              <option value="Medicinal plants / Drug development">
+                Medicinal plants / Drug development
+              </option>
+              <option value="Climatic change and human health">
+                Climatic change and human health
+              </option>
+              <option value="Energy and Mineral Resources">
+                Energy and Mineral Resources
+              </option>
+              <option value="Environmental Pollution and Remediation">
+                Environmental Pollution and Remediation
+              </option>
+              <option value="Aquaculture and the Blue Economy">
+                Aquaculture and the Blue Economy
+              </option>
+              <option value="Science and security">Science and security</option>
+              <option value="Agriculture and Food Security">
+                Agriculture and Food Security
+              </option>
+              <option value="Conservation and utilization of our natural heritage/ resources">
+                Conservation and utilization of our natural heritage/ resources
+              </option>
+              <option value="Biotechnology, Bioinformatics and Cheminformatics">
+                Biotechnology, Bioinformatics and Cheminformatics
+              </option>
+              <option value="Computational/Mathematical modeling">
+                Computational/Mathematical modeling
+              </option>
+              <option value="Nanotechnology">Nanotechnology</option>
             </select>
           </div>
           <div className="section-2">
