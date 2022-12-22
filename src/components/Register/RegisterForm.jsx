@@ -55,17 +55,13 @@ const RegisterForm = () => {
         <div className="section">
           <div className="section-1">
             <label htmlFor="part">Participant Type</label>
-            <div>
-              <input type="radio" name="part" />
-              <label htmlFor="part">Oral Presenter</label>
-            </div>
-            <div>
-              <input type="radio" name="part" />
-              <label htmlFor="part">Attendee (Non-Presenter)</label>
-            </div>
+            <select>
+              <option value="Physical">Physical</option>
+              <option value="Virtual">Virtual</option>
+            </select>
           </div>
         </div>
-        <button>Register</button>
+        <button className="submit">Register</button>
         {/* <div>
                 <label htmlFor="name">Last Name</label>
                 <input type="text" placeholder="Name"/>
