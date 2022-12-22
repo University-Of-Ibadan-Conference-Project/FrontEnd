@@ -41,7 +41,7 @@ const Home = () => {
           </span>
           , scheduled to be held from 2nd -5th May, 2023 at the Faculty of
           Science Lakeside Lecture Theater, University of Ibadan. The theme for
-          this conference is
+          this conference is{" "}
           <b>
             &quot;Strengthening Scientific Research for National
             Development&quot;

@@ -78,9 +78,9 @@ const Accomodation = () => {
 const HotelPrevCard = ({ mapLink, name }) => (
   <div
     className={styles.container}
-    data-aos="zoom-in-down"
-    data-aos-easing="ease-out-cubic"
-    data-aos-duration="2500"
+    // data-aos="zoom-in-down"
+    // data-aos-easing="ease-out-cubic"
+    // data-aos-duration="2500"
   >
     <div className={styles.hotelPreview}></div>
     <div className={styles.content}>
