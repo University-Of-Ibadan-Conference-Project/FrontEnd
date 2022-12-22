@@ -52,10 +52,6 @@ function Navbar({ navVisibility, setNavVisibility }) {
                 name: "Presentation Guideline",
                 route: "/presentation-guideline",
               },
-              {
-                name: "Registration Guideline",
-                route: "/",
-              },
             ]}
           />
         </li>
