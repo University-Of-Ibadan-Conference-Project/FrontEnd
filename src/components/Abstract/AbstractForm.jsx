@@ -33,6 +33,10 @@ const AbstractForm = () => {
 
         <div className="section">
           <div className="section-1">
+            <label htmlFor="name">Corresponding Author{`'`}s Institution</label>
+            <input type="text" placeholder="Institution" />
+          </div>
+          <div className="section-2">
             <label htmlFor="pre">Presentation Type</label>
             <select>
               <option value=""></option>
@@ -45,49 +49,46 @@ const AbstractForm = () => {
               </option>
             </select>
           </div>
-          <div className="section-2">
-            <label htmlFor="name">Institution</label>
-            <input type="text" placeholder="Institution" />
-          </div>
         </div>
-        <div className="section">
-          <div className="section-1">
-            <label htmlFor="co">
-              Co Authors Name (e.g First Name Last Name)
-            </label>
-            <input type="text" placeholder="Co Authors Name" id="co-author" />
-          </div>
-          <div className="section-2">
-            <label htmlFor="inst">Co Authors Institution</label>
-            <input
-              type="text"
-              placeholder="Co Authors Institution"
-              id="co-author"
-            />
-          </div>
-        </div>
+
         <div className="section">
           <div className="section-1">
             <label htmlFor="rese">Research Area</label>
-            <input type="text" placeholder="Research Area" />
+            <select>
+              <option value="djdj">jdjdj</option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
           </div>
           <div className="section-2">
             <label htmlFor="rese">Keywords Field</label>
             <input type="text" placeholder="Keywords" />
           </div>
         </div>
-        <div className="sections">
-          <label htmlFor="body">Abtsract Body</label>
-          <textarea placeholder="Your Abstract body here"></textarea>
+        <div className="section">
+          <div className="section-1">
+            <label htmlFor="body">Download Abstract template</label>
+            <button className="btn">Click to download template</button>
+          </div>
+          <div className="section-2">
+            <label htmlFor="file">
+              Attach the file of your abstract according to the abstract
+              template (File Size must not be greater than 5MB)
+            </label>
+            <input type="file" />
+          </div>
         </div>
-        <div className="section-1">
-          <label htmlFor="file">
-            Attach the file of your abstract according to the abstract template
-            (File Size must not be greater than 5MB)
-          </label>
-          <input type="file" />
-        </div>
-        <button>Submit</button>
+
+        <button className="submit">Submit</button>
         {/* <div>
                 <label htmlFor="name">Last Name</label>
                 <input type="text" placeholder="Name"/>
