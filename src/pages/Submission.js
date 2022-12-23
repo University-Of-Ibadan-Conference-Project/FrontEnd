@@ -13,7 +13,7 @@ function Submission() {
           "https://www.np.edu.sg/images/default-source/admissions-enrolment2/guide-for-prospective-students/course-fee.jpg"
         }
       />
-      <form>
+      <form className={styles.SubmissionForm}>
         <div>
           <label>Email: </label>
           <input />
