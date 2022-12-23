@@ -7,6 +7,10 @@
     align-items: center;
     justify-content: space-between;
     margin: 3em auto;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
   }
 
   &List {
@@ -14,6 +18,11 @@
 
     div {
       display: flex;
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        margin: 1em 0;
+      }
 
       p {
         padding: 0.25em 0;
@@ -38,6 +47,11 @@
   text-align: center;
   width: 30%;
   margin: auto;
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    margin-bottom: 2em;
+  }
 
   h5 {
     font-weight: 400;

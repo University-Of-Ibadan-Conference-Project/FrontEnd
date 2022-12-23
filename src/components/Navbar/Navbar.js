@@ -84,7 +84,7 @@ function Navbar({ navVisibility, setNavVisibility }) {
               },
               {
                 name: "Registration Guideline",
-                route: "/programme",
+                route: "/registration-guideline",
               },
               {
                 name: "Committees",
@@ -110,17 +110,20 @@ function Navbar({ navVisibility, setNavVisibility }) {
           </Link>{" "}
         </li>
         <li>
-          <Link className="link" to={"/faq"}>
-            <p style={{ color: activeNav === "/faq" ? color : "" }}> FAQ</p>
+          <Link className="link" to={"/register"}>
+            <p style={{ color: activeNav === "/register" ? color : "" }}>
+              {" "}
+              Register
+            </p>
           </Link>
         </li>
       </ul>
       <div className={styles.connect}>
-        <span>
+        {/* <span>
           <Link className="link" to={"/login"}>
             Login
           </Link>
-        </span>
+        </span> */}
         <Link className={styles.linkBtn} to={"/register"}>
           Register Now
         </Link>

@@ -26,6 +26,10 @@
       display: flex;
       align-items: center;
 
+      @media screen and (max-width: 768px) {
+        display: block;
+      }
+
       h2 {
         font-weight: 400;
         font-size: 1em;
@@ -42,6 +46,12 @@
           font-weight: bold;
           text-transform: uppercase;
           margin-left: 2em;
+
+          @media screen and (max-width: 768px) {
+            margin: 0;
+            text-align: left;
+            margin-top: 1em;
+          }
         }
       }
     }
@@ -52,6 +62,10 @@
       font-weight: 400;
       line-height: 1.75em;
       list-style-type: circle;
+
+      @media screen and (max-width: 768px) {
+        margin-left: 2em;
+      }
 
       ul {
         list-style-type: square;

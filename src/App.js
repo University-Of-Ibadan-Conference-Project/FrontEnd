@@ -7,7 +7,7 @@ import Accomodation from "./pages/Accomodation";
 import Committee from "./pages/Committee";
 import Advertisement from "./pages/Advertisement";
 import AboutUs from "./pages/About-Us";
-import Login from "./pages/Login";
+// import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Footer from "./components/Footer/Footer";
 import Faq from "./pages/Faq";
@@ -18,6 +18,7 @@ import PresentationGuidline from "./pages/PresentationGuideline";
 import POCP from "./pages/POCP";
 import OrderOfProgram from "./pages/Order-Of-Program";
 import Exhibition from "./pages/Exhibition";
+import RegistrationGuide from "./pages/RegistrationGuide";
 
 const App = () => {
   const location = useLocation();
@@ -50,6 +51,7 @@ const App = () => {
         <Route element={<POCP />} path="/publication-of-conference-papers" />
         <Route element={<OrderOfProgram />} path="/programme" />
         <Route element={<Exhibition />} path="/exhibition" />
+        <Route element={<RegistrationGuide />} path="/registration-guideline" />
         <Route
           element={<PresentationGuidline />}
           path="/presentation-guideline"
@@ -58,7 +60,7 @@ const App = () => {
         <Route element={<Advertisement />} path="/advertisement" />
         <Route element={<Committee />} path="/committee" />
         <Route element={<AboutUs />} path="/about-us" />
-        <Route element={<Login />} path="/login" />
+        {/* <Route element={<Login />} path="/login" /> */}
         <Route element={<Register />} path="/register" />
         <Route element={<Faq />} path="/faq" />
         <Route element={<Blog />} path="/blog" />
