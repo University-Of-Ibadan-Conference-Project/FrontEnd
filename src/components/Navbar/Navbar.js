@@ -54,7 +54,7 @@ function Navbar({ navVisibility, setNavVisibility }) {
               },
               {
                 name: "Publication of Conference Papers",
-                route: "/presentation-guideline",
+                route: "/publication-of-conference-papers",
               },
             ]}
           />
@@ -65,11 +65,11 @@ function Navbar({ navVisibility, setNavVisibility }) {
             dropdownContent={[
               {
                 name: "Advertisement",
-                route: "/",
+                route: "/advertisement",
               },
               {
                 name: "Exhibition",
-                route: "/",
+                route: "/exhibition",
               },
             ]}
           />

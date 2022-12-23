@@ -15,6 +15,9 @@ import Blog from "./pages/Blog";
 import Contact from "./components/Contact/Contact";
 import SubmissionGuidlines from "./pages/SubmissionGuidlines";
 import PresentationGuidline from "./pages/PresentationGuideline";
+import POCP from "./pages/POCP";
+import OrderOfProgram from "./pages/Order-Of-Program";
+import Exhibition from "./pages/Exhibition";
 
 const App = () => {
   const location = useLocation();
@@ -44,6 +47,9 @@ const App = () => {
         <Route element={<Home />} path="/" />
         <Route element={<Help />} path="/submit-abstract" />
         <Route element={<SubmissionGuidlines />} path="/submit-guidelines" />
+        <Route element={<POCP />} path="/publication-of-conference-papers" />
+        <Route element={<OrderOfProgram />} path="/programme" />
+        <Route element={<Exhibition />} path="/exhibition" />
         <Route
           element={<PresentationGuidline />}
           path="/presentation-guideline"
