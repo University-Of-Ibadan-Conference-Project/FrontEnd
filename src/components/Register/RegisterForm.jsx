@@ -53,10 +53,17 @@ const RegisterForm = () => {
         </div>
         <div className="section">
           <div className="section-1">
+            <label htmlFor="name">Institution / Organisation</label>
+            <input type="text" placeholder="Institution" />
+          </div>
+          <div className="section-2">
             <label htmlFor="name">Department</label>
             <input type="text" placeholder="Enter your department" />
           </div>
-          <div className="section-2">
+        </div>
+
+        <div className="section">
+          <div className="section-1">
             <label htmlFor="part">Country</label>
             <select onChange={selectCountry} value={userSelectedCountry}>
               <option hidden={true} defaultValue="">
@@ -69,24 +76,21 @@ const RegisterForm = () => {
               ))}
             </select>
           </div>
-        </div>
-
-        <div className="section">
-          <div className="section-1">
-            <label htmlFor="name">Institution / Organisation</label>
-            <input type="text" placeholder="Institution" />
-          </div>
           <div className="section-2">
-            <label htmlFor="name">Address</label>
+            <label htmlFor="name">State / Province</label>
             <input
               type="text"
-              placeholder="Enter your Address"
+              placeholder="State / Province"
               className="address"
             />
           </div>
         </div>
         <div className="section">
           <div className="section-1">
+            <label htmlFor="name">City</label>
+            <input type="text" placeholder="City" />
+          </div>
+          <div className="section-2">
             <label htmlFor="part">Participant Type</label>
             <select>
               <option value="Physical">Physical</option>
