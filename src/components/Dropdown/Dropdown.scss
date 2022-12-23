@@ -19,9 +19,11 @@
 .icon {
   margin-left: 5px;
 }
+
 .dropdown-content {
   position: absolute;
   /* margin-top: 41px; */
+  z-index: 99;
   top: 170%;
   width: 14rem;
   padding: 15px;
@@ -32,6 +34,11 @@
   border-radius: 5px;
   /* border: 1px solid red; */
   box-shadow: 3px 3px 10px rgba(174, 171, 171, 0.06);
+
+  @media screen and (max-width: 768px) {
+    width: 20rem;
+    left: -50px;
+  }
 }
 
 .dropdown-item {
