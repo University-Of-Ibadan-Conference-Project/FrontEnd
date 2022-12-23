@@ -33,8 +33,8 @@ const RegistrationGuide = () => {
           registration fee to the conference account ( Name of account:
           University of Ibadan, Faculty of Science Alumni Association, Bank:
           Union Bank, Account Number: 0109363898) and upload the receipt of your
-          payment <Link to="/">here</Link>. Only registered participants and
-          invited guests will be allowed into the conference venue.
+          payment <Link to="/register">here</Link>. Only registered participants
+          and invited guests will be allowed into the conference venue.
         </p>
       </div>
     </>

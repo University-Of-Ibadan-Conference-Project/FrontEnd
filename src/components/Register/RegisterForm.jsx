@@ -53,8 +53,16 @@ const RegisterForm = () => {
             <input type="text" placeholder="First Name" id="name" />
           </div>
           <div className="section-2">
-            <label htmlFor="name">Address</label>
-            <input type="text" placeholder="Address" id="name" />
+            <label className="required" htmlFor="part">
+              Participant Type
+            </label>
+            <select>
+              <option value="" hidden>
+                Participant Type
+              </option>
+              <option value="Physical">Physical</option>
+              <option value="Virtual">Virtual</option>
+            </select>
           </div>
         </div>
         <div className="section">
@@ -109,15 +117,6 @@ const RegisterForm = () => {
           <div className="section-1">
             <label htmlFor="name">City</label>
             <input type="text" placeholder="City" />
-          </div>
-          <div className="section-2">
-            <label className="required" htmlFor="part">
-              Participant Type
-            </label>
-            <select>
-              <option value="Physical">Physical</option>
-              <option value="Virtual">Virtual</option>
-            </select>
           </div>
         </div>
         <button className="submit">Register</button>
