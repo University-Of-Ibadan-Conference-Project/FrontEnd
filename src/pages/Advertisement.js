@@ -23,7 +23,7 @@ const advertisement = () => {
         Individuals, companies and organisations wishing to place adverts and/or
         goodwill messages in the conference programme/Book of Abstracts should
         upload their write-up together with the evidence of payment{" "}
-        <Link to="/">Here</Link> on or before 5 April, 2023.
+        <Link to="/submission">Here</Link> on or before 5 April, 2023.
       </div>
 
       <div className="app__adverts">
