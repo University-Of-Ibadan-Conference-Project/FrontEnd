@@ -33,21 +33,41 @@ const RegisterForm = () => {
       <form onSubmit={handleSubmit}>
         <div className="section">
           <div className="section-1">
-            <label htmlFor="name">First Name</label>
+            <label className="required" htmlFor="name">
+              First Name
+            </label>
             <input type="text" placeholder="First Name" id="name" />
           </div>
           <div className="section-2">
-            <label htmlFor="name">Last Name</label>
+            <label className="required" htmlFor="name">
+              Last Name
+            </label>
             <input type="text" placeholder="Last Name" id="name" />
           </div>
         </div>
         <div className="section">
           <div className="section-1">
-            <label htmlFor="email">Email</label>
+            <label className="required" htmlFor="name">
+              Other Name
+            </label>
+            <input type="text" placeholder="First Name" id="name" />
+          </div>
+          <div className="section-2">
+            <label htmlFor="name">Address</label>
+            <input type="text" placeholder="Address" id="name" />
+          </div>
+        </div>
+        <div className="section">
+          <div className="section-1">
+            <label className="required" htmlFor="email">
+              Email
+            </label>
             <input type="email" placeholder="example@example.com" id="email" />
           </div>
           <div className="section-2">
-            <label htmlFor="phone no">Phone Number</label>
+            <label className="required" htmlFor="phone no">
+              Phone Number
+            </label>
             <input type="number" placeholder="Enter your phone number" />
           </div>
         </div>
@@ -91,7 +111,9 @@ const RegisterForm = () => {
             <input type="text" placeholder="City" />
           </div>
           <div className="section-2">
-            <label htmlFor="part">Participant Type</label>
+            <label className="required" htmlFor="part">
+              Participant Type
+            </label>
             <select>
               <option value="Physical">Physical</option>
               <option value="Virtual">Virtual</option>
