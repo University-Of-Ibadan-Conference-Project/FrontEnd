@@ -11,6 +11,22 @@
     @media screen and (max-width: 768px) {
       display: block;
     }
+
+    &:nth-of-type(1) {
+      .Speaker {
+        img {
+          width: 15em;
+        }
+      }
+    }
+
+    &:nth-of-type(2) {
+      .Speaker {
+        img {
+          width: 15em;
+        }
+      }
+    }
   }
 
   &List {
@@ -41,11 +57,13 @@
 
 .Speaker {
   border-radius: 7px;
-  background-color: #223645;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 0.5em;
   padding-bottom: 1em;
   text-align: center;
-  width: 30%;
+  // width: 30%;
+  width: fit-content;
   margin: auto;
 
   @media screen and (max-width: 768px) {
@@ -57,7 +75,8 @@
     font-weight: 400;
     font-family: poppins, sans-serif;
     font-size: 16px;
-    color: #fa0368;
+    color: #000000;
+    font-weight: bold;
     margin-top: 0.5em;
   }
 

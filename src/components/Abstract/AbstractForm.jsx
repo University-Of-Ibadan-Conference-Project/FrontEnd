@@ -109,7 +109,8 @@ const AbstractForm = () => {
           <div className="section-2">
             <label htmlFor="file">
               Attach the file of your abstract according to the abstract
-              template (File Size must not be greater than 5MB)
+              template (File Size must not be greater than 5MB). The abstract
+              should be in word format ( .docx )
             </label>
             <input type="file" />
           </div>

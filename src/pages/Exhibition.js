@@ -22,9 +22,12 @@ const Exhibition = () => {
         The organising committee invites organizations, industries, NGOs and
         individuals to exhibit their products and services at the conference.
         Exhibition stands will be made available at the conference venue.
-        Interested participants should contact the Local Organising Committee
-        (LOC) Secretary on or before 5 April, 2023 with the payment of the
-        exhibition fee of N50, 000.00 per stand.
+        Interested participants should{" "}
+        <a href="mailto:email@example.com">
+          contact the Local Organising Committee (LOC) Secretary
+        </a>{" "}
+        on or before 5 April, 2023 and upload the evidence of the payment of the
+        exhibition fee of N50, 000.00 per stand Here .
       </div>
     </>
   );

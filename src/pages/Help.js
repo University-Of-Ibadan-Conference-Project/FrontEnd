@@ -5,7 +5,7 @@ import abstractBg from "./../assets/img/abstract-bg.jpeg";
 export default function Help() {
   return (
     <div>
-      <CommonHero title="Submit your Absract" info="" bg={abstractBg} />
+      <CommonHero title="Submit your Abstract" info="" bg={abstractBg} />
       <AbstractForm />
     </div>
   );
