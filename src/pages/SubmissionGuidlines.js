@@ -27,12 +27,9 @@ const SubmissionGuidlines = () => {
         words excluding title and author&apos;s name(s) and a maximum of five
         keywords. The title should be in bold capital letters followed by the
         full name(s) (surname first) and address (s) of author(s) including
-        e-mail address and phone number(s) of the corresponding author.
-        Author(s) should indicate their presentation preference i.e. oral and/or
-        poster at the foot of the abstract. Please visit http://www to see the
-        abstract template and submit your abstract online, on or before 28
-        February, 2023. All the accepted abstracts will be published in the Book
-        of Abstract.
+        e-mail address and phone number(s) of the corresponding author. The
+        deadline for abstract submission is on or before 28 February, 2023. All
+        the accepted abstracts will be published in the Book of Abstract.
       </div>
     </>
   );

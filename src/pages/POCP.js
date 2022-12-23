@@ -21,14 +21,17 @@ const POCP = () => {
         <h2 style={{ textAlign: "center", margin: "2em 0" }}>
           Publication of Conference Papers
         </h2>
-        Participants that want their paper to appear in the Special issue of the
-        JOURNAL OF SCIENCE RESEARCH should submit the full text of the
+        Participants that want their papers to appear in the Special issue of
+        the JOURNAL OF SCIENCE RESEARCH should submit the full text of the
         manuscript following the Journal&apos;s guidelines (www.jsribadan.ng) on
         or before 31 March, 2023. Manuscripts that do not conform to the
-        journal&apos;s guidelines will be rejected. Please visit http://www to
-        submit your paper and note that only the papers presented at the
-        conference shall be considered for publication after the payment of the
-        Processing Fees of N15, 000.00
+        journal&apos;s guidelines will be rejected. Please note that only the
+        papers presented at the conference shall be considered for publication
+        after the payment of the Processing Fees of N15, 000.00. Submit your
+        full manuscript{" "}
+        <a target={"_blank"} href="https://google.com" rel="noreferrer">
+          Here
+        </a>
       </div>
     </>
   );

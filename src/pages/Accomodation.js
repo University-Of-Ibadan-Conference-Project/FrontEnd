@@ -12,14 +12,25 @@ const Accomodation = () => {
         bg={hotelPreview}
       />
       {/* <h2>Hello</h2> */}
-      <div className={styles.ActivityCard}>
+      <div
+        style={{
+          width: "80%",
+          margin: "auto",
+          // textAlign: "left",
+          textAlign: "justify",
+          textJustify: "inter-word",
+          lineHeight: "2em",
+          padding: "2em 0",
+        }}
+      >
         Participants will be responsible for their accommodation. Below are
         available standard hotels and guest houses with good lodging in and
         around the University of Ibadan. Charges are moderate, between{" "}
-        <b>N8,000 and N30,000/night.</b>All inquiries should be directed to the
-        Secretary of the Local Organising Committee of this conference.
-        <br></br>
-        <b>Telephone:</b> 08055475865<b>E-mail:</b> faculty_science@ui.edu.ng
+        <b>N8,000 and N30,000/night.</b> All inquiries should be directed to the{" "}
+        <a href="mailto:email@example.com">
+          Secretary of the Local Organising Committee
+        </a>{" "}
+        of this conference.
       </div>
       <div className={styles.HotelDisplayCards}>
         <HotelPrevCard

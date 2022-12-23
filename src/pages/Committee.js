@@ -2,6 +2,10 @@ import CommonHero from "../components/CommonHero/CommonHero";
 import conferenceBg from "../assets/img/conference-bg.jpg";
 import PropTypes from "prop-types";
 
+import VCPic from "./../assets/profileImages/profile-3.jpeg";
+import DeanPic from "./../assets/profileImages/profile-1.jpeg";
+import ChairmanPic from "./../assets/profileImages/profile-2.jpeg";
+
 import styles from "./../sass/pages/Committee.module.scss";
 
 export default function Committee() {
@@ -95,35 +99,39 @@ export default function Committee() {
 
       <section className={styles.Committee}>
         <div className={styles.CommitteeCard}>
-          <Speaker name={"The Vice Chancellor"} />
+          <Speaker image={VCPic} name={"The Vice Chancellor"} />
         </div>
         <div className={styles.CommitteeCard}>
-          <Speaker name={"Dean"} />
-          <Speaker name={"Chairman"} />
+          <Speaker image={DeanPic} name={"Dean"} />
+          <Speaker image={ChairmanPic} name={"Chairman"} />
         </div>
       </section>
     </div>
   );
 }
 
-const Speaker = ({ name, isKeyNoteSpeaker = false }) => {
+const Speaker = ({ image, name }) => {
   return (
     <div className={styles.Speaker}>
       <img
-        src="https://www.calwestern.com/wp-content/uploads/2020/08/person-4-300x300-min.png"
+        src={
+          image
+            ? image
+            : "https://www.calwestern.com/wp-content/uploads/2020/08/person-4-300x300-min.png"
+        }
         alt="keynote speaker"
       />
-      <h5>{isKeyNoteSpeaker ? "KEYNOTE" : "PLENARY"} SPEAKER</h5>
-      <h6>
+      <h5>{name}</h5>
+      {/* <h6>
         <span>
           <strong>{name}</strong>
         </span>
-      </h6>
+      </h6> */}
     </div>
   );
 };
 
 Speaker.propTypes = {
-  isKeyNoteSpeaker: PropTypes.bool,
+  image: PropTypes.string,
   name: PropTypes.string,
 };
