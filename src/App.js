@@ -6,7 +6,7 @@ import Help from "./pages/Help";
 import Accomodation from "./pages/Accomodation";
 import Committee from "./pages/Committee";
 import Advertisement from "./pages/Advertisement";
-import AboutUs from "./pages/About-Us";
+// import AboutUs from "./pages/About-Us";
 // import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Footer from "./components/Footer/Footer";
@@ -59,7 +59,7 @@ const App = () => {
         <Route element={<Accomodation />} path="/accomodation" />
         <Route element={<Advertisement />} path="/advertisement" />
         <Route element={<Committee />} path="/committee" />
-        <Route element={<AboutUs />} path="/about-us" />
+        {/* <Route element={<AboutUs />} path="/about-us" /> */}
         {/* <Route element={<Login />} path="/login" /> */}
         <Route element={<Register />} path="/register" />
         <Route element={<Faq />} path="/faq" />

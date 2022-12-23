@@ -97,7 +97,14 @@ const AbstractForm = () => {
         <div className="section">
           <div className="section-1">
             <label htmlFor="body">Download Abstract template</label>
-            <button className="btn">Click to download template</button>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              className="downloadBtn"
+              href="https://drive.google.com/file/d/1I50GbOO5VudTPHJqEDeQ-JYIeG_Wc4De/view"
+            >
+              Click to download template
+            </a>
           </div>
           <div className="section-2">
             <label htmlFor="file">
