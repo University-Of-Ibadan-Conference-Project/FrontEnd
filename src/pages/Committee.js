@@ -9,17 +9,6 @@ export default function Committee() {
     <div className="committee">
       <CommonHero title="Committee" bg={conferenceBg} />
       <section className={styles.Committee}>
-        <div className={styles.CommitteeCard}>
-          <Speaker name={"The Vice Chancellor"} />
-        </div>
-        <div className={styles.CommitteeCard}>
-          <Speaker name={"The Vice Chancellor"} />
-          <Speaker name={"The Vice Chancellor"} />
-          <Speaker name={"The Vice Chancellor"} />
-        </div>
-      </section>
-
-      <section className={styles.Committee}>
         <h2
           style={{
             margin: "4em 0 1em",
@@ -101,6 +90,16 @@ export default function Committee() {
             <p>Mr. O. Olomiloro</p>
             <p>Faculty Officer</p>
           </div>
+        </div>
+      </section>
+
+      <section className={styles.Committee}>
+        <div className={styles.CommitteeCard}>
+          <Speaker name={"The Vice Chancellor"} />
+        </div>
+        <div className={styles.CommitteeCard}>
+          <Speaker name={"Dean"} />
+          <Speaker name={"Chairman"} />
         </div>
       </section>
     </div>
