@@ -1,4 +1,8 @@
-import { RiFacebookCircleFill, RiTwitterFill } from "react-icons/ri";
+import {
+  RiFacebookCircleFill,
+  RiInstagramFill,
+  RiTwitterFill,
+} from "react-icons/ri";
 import { Link } from "react-router-dom";
 import styles from "./../../sass/components/Footer.module.scss";
 import logo from "./../../assets/img/v2-logo.png";
@@ -70,6 +74,13 @@ export default function Footer() {
               rel="noreferrer"
             >
               <RiFacebookCircleFill
+                size={30}
+                fill="#98A2B3"
+                className={styles.FooterIcon}
+              />
+            </a>
+            <a href="https://instagram.com/" target="_blank" rel="noreferrer">
+              <RiInstagramFill
                 size={30}
                 fill="#98A2B3"
                 className={styles.FooterIcon}
