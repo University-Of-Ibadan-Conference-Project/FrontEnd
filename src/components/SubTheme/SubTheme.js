@@ -41,8 +41,8 @@ const SubTheme = () => {
     },
     {
       id: 6,
-      title: "Aquaculture and the Blue Economy",
-      backgroundImage: aquaculture,
+      title: "Conservation and utilization of our natural heritage/ resources",
+      backgroundImage: resources,
     },
     {
       id: 7,
@@ -71,8 +71,8 @@ const SubTheme = () => {
     },
     {
       id: 12,
-      title: "Conservation and utilization of our natural heritage/ resources",
-      backgroundImage: resources,
+      title: "Aquaculture and the Blue Economy",
+      backgroundImage: aquaculture,
     },
   ];
   return (
