@@ -45,6 +45,14 @@
         margin-bottom: 30px;
       }
     }
+
+    .required {
+      &::after {
+        content: "*";
+        color: #f00;
+      }
+    }
+
     input,
     select,
     .submit,
