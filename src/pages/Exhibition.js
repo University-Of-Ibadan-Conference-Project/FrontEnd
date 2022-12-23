@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import CommonHero from "../components/CommonHero/CommonHero";
 
 const Exhibition = () => {
@@ -27,7 +28,8 @@ const Exhibition = () => {
           contact the Local Organising Committee (LOC) Secretary
         </a>{" "}
         on or before 5 April, 2023 and upload the evidence of the payment of the
-        exhibition fee of N50, 000.00 per stand Here .
+        exhibition fee of N50, 000.00 per stand{" "}
+        <Link to="/submission">Here</Link>.
       </div>
     </>
   );

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import CommonHero from "../components/CommonHero/CommonHero";
 
 const POCP = () => {
@@ -28,10 +29,7 @@ const POCP = () => {
         journal&apos;s guidelines will be rejected. Please note that only the
         papers presented at the conference shall be considered for publication
         after the payment of the Processing Fees of N15, 000.00. Submit your
-        full manuscript{" "}
-        <a target={"_blank"} href="https://google.com" rel="noreferrer">
-          Here
-        </a>
+        full manuscript <Link to="/submission">Here</Link>
       </div>
     </>
   );

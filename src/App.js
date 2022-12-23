@@ -19,6 +19,7 @@ import POCP from "./pages/POCP";
 import OrderOfProgram from "./pages/Order-Of-Program";
 import Exhibition from "./pages/Exhibition";
 import RegistrationGuide from "./pages/RegistrationGuide";
+import Submission from "./pages/Submission";
 
 const App = () => {
   const location = useLocation();
@@ -56,6 +57,7 @@ const App = () => {
           element={<PresentationGuidline />}
           path="/presentation-guideline"
         />
+        <Route element={<Submission />} path="/submission" />
         <Route element={<Accomodation />} path="/accomodation" />
         <Route element={<Advertisement />} path="/advertisement" />
         <Route element={<Committee />} path="/committee" />
