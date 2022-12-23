@@ -72,18 +72,30 @@
       }
     }
 
-    button {
+    button,
+    .downloadBtn {
       background-color: #004777;
       border: 0;
       color: white;
       padding: 15px 0;
       font-size: 20px;
       margin-top: 30px;
-      transition: all ease-in-out 300ms;
+      transition: all linear 0.2s;
+      cursor: pointer;
+
       &:hover {
         border: 0;
         background-color: #00afb5;
       }
+    }
+
+    .downloadBtn {
+      display: block;
+      text-decoration: none;
+      text-align: center;
+      border-radius: 7px;
+      font-size: 0.9em;
+      margin-top: 1em;
     }
   }
 }
