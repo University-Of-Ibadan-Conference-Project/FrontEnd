@@ -17,7 +17,7 @@ const Home = () => {
       setVisitCount(0);
     }, 86400000); // reset count every 24 hours
     return () => clearInterval(interval);
-   }, []);
+  }, []);
   
   return (
     <>
