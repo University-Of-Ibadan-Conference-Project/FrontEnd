@@ -3,8 +3,8 @@ import conferenceBg from "../assets/img/conference-bg.jpg";
 import PropTypes from "prop-types";
 
 import VCPic from "./../assets/profileImages/profile-3.jpeg";
-import DeanPic from "./../assets/profileImages/profile-1.jpeg";
-import ChairmanPic from "./../assets/profileImages/profile-2.jpeg";
+import ChairmanPic from "./../assets/profileImages/profile-1.jpeg";
+import DeanPic from "./../assets/profileImages/profile-2.jpeg";
 
 import styles from "./../sass/pages/Committee.module.scss";
 
