@@ -93,6 +93,7 @@ const Home = () => {
       {/* Event subtheme */}
 
       <SubTheme />
+      <div className={styles.Main}>Today&apos;s Total Visits: {visitCount}</div>
     </>
   );
 };
