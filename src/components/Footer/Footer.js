@@ -7,9 +7,19 @@ import {
 import { Link } from "react-router-dom";
 import styles from "./../../sass/components/Footer.module.scss";
 import logo from "./../../assets/img/v2-logo.png";
+import { useEffect, useState } from "react";
+import countapi from "countapi-js";
 // import Subscribe from "../Subscribe/Subscribe";
 
 export default function Footer() {
+  const [visitorsCount, setVisitorsCount] = useState(0);
+
+  useEffect(() => {
+    countapi.visits().then((result) => {
+      setVisitorsCount(result.value);
+    });
+  }, []);
+
   return (
     <>
       {/* <Subscribe /> */}
@@ -50,40 +60,50 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div>
-            <h2>Socials</h2>
-            <a href="https://twitter.com/" target="_blank" rel="noreferrer">
-              <RiTwitterFill
-                size={30}
-                fill="#98A2B3"
-                className={styles.FooterIcon}
-              />
-            </a>
-            <a
-              href="https://web.facebook.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <RiFacebookCircleFill
-                size={30}
-                fill="#98A2B3"
-                className={styles.FooterIcon}
-              />
-            </a>
-            <a href="https://instagram.com/" target="_blank" rel="noreferrer">
-              <RiInstagramFill
-                size={30}
-                fill="#98A2B3"
-                className={styles.FooterIcon}
-              />
-            </a>
-            <a href="https://whatsapp.com/" target="_blank" rel="noreferrer">
-              <RiWhatsappFill
-                size={30}
-                fill="#98A2B3"
-                className={styles.FooterIcon}
-              />
-            </a>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "start",
+              gap: "1em",
+            }}
+          >
+            <div>
+              <h2>Socials</h2>
+              <a href="https://twitter.com/" target="_blank" rel="noreferrer">
+                <RiTwitterFill
+                  size={30}
+                  fill="#98A2B3"
+                  className={styles.FooterIcon}
+                />
+              </a>
+              <a
+                href="https://web.facebook.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <RiFacebookCircleFill
+                  size={30}
+                  fill="#98A2B3"
+                  className={styles.FooterIcon}
+                />
+              </a>
+              <a href="https://instagram.com/" target="_blank" rel="noreferrer">
+                <RiInstagramFill
+                  size={30}
+                  fill="#98A2B3"
+                  className={styles.FooterIcon}
+                />
+              </a>
+              <a href="https://whatsapp.com/" target="_blank" rel="noreferrer">
+                <RiWhatsappFill
+                  size={30}
+                  fill="#98A2B3"
+                  className={styles.FooterIcon}
+                />
+              </a>
+            </div>
+            <span>Visits: {visitorsCount}</span>
           </div>
         </div>
         <span className={styles.FooterCopyRight}>
