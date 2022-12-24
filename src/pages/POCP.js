@@ -29,7 +29,7 @@ const POCP = () => {
         journal&apos;s guidelines will be rejected. Please note that only the
         papers presented at the conference shall be considered for publication
         after the payment of the Processing Fees of N15, 000.00. Submit your
-        full manuscript <Link to="/submission">Here</Link>
+        full manuscript <Link to="/submission">here</Link>
       </div>
     </>
   );

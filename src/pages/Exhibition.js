@@ -29,7 +29,7 @@ const Exhibition = () => {
         </a>{" "}
         on or before 5 April, 2023 and upload the evidence of the payment of the
         exhibition fee of N50, 000.00 per stand{" "}
-        <Link to="/submission">Here</Link>.
+        <Link to="/submission">here</Link>.
       </div>
     </>
   );
