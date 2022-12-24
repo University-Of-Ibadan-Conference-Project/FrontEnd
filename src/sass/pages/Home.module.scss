@@ -1,5 +1,7 @@
 // @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+
 .Home {
   text-align: center;
   color: #ffffff;
@@ -211,5 +213,45 @@
       font-weight: 700;
       // font-family: poppins, sans-serif;
     }
+  }
+}
+
+.Main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  height: 70px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #fdcb6e;
+  cursor: pointer;
+  box-shadow: 5px 5px 0 0;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20px;
+
+
+  @media (max-width: 850px) {
+
+  }
+
+  @media (max-width: 550px) {
+   
+  }
+
+  @media (max-width: 450px) {
+
+  }
+
+  @media (max-width: 375px) {
+    width: 90%;
+  }
+
+  .Main:hover {
+    box-shadow: -5px -5px 0 0;
+    transform: scale(0.9);
   }
 }
