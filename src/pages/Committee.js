@@ -99,18 +99,30 @@ export default function Committee() {
 
       <section className={styles.Committee}>
         <div className={styles.CommitteeCard}>
-          <Speaker image={VCPic} name={"The Vice Chancellor"} />
+          <Speaker
+            image={VCPic}
+            name={"Prof K.O Adebowale, mni, FAS "}
+            title={"(The Vice Chancellor, University of Ibadan)"}
+          />
         </div>
         <div className={styles.CommitteeCard}>
-          <Speaker image={DeanPic} name={"Dean"} />
-          <Speaker image={ChairmanPic} name={"Chairman"} />
+          <Speaker
+            image={DeanPic}
+            name={"Prof. A.A Bakare, FAS "}
+            title={"(Dean, Faculty of Science, University of Ibadan)"}
+          />
+          <Speaker
+            image={ChairmanPic}
+            name={"Prof. O.O. Sanibare "}
+            title="(Chairman, Conference Organizing Committee)"
+          />
         </div>
       </section>
     </div>
   );
 }
 
-const Speaker = ({ image, name }) => {
+const Speaker = ({ image, name, title }) => {
   return (
     <div className={styles.Speaker}>
       <img
@@ -122,6 +134,7 @@ const Speaker = ({ image, name }) => {
         alt="keynote speaker"
       />
       <h5>{name}</h5>
+      <h5>{title}</h5>
       {/* <h6>
         <span>
           <strong>{name}</strong>
@@ -134,4 +147,5 @@ const Speaker = ({ image, name }) => {
 Speaker.propTypes = {
   image: PropTypes.string,
   name: PropTypes.string,
+  title: PropTypes.string,
 };

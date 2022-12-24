@@ -103,4 +103,19 @@
       }
     }
   }
+  .contactPage {
+    .body {
+      width: 100%;
+    }
+
+    .form {
+      width: 100%;
+      .head {
+        .section-1,
+        .section-2 {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
