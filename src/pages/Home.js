@@ -1,24 +1,9 @@
 import CountDownTimer from "../components/Countdown/Countdown";
 import styles from "./../sass/pages/Home.module.scss";
 import PropTypes from "prop-types";
-import { useEffect, useState } from "react";
 import SubTheme from "../components/SubTheme/SubTheme";
 
 const Home = () => {
-  
-  const [visitCount, setVisitCount] = useState(0);
-
-  useEffect(() => {
-    setVisitCount(visitCount + 1);
-  }, []);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setVisitCount(0);
-    }, 86400000); // reset count every 24 hours
-    return () => clearInterval(interval);
-  }, []);
-  
   return (
     <>
       <div className={styles.Home}>
@@ -92,8 +77,6 @@ const Home = () => {
       {/* Event subtheme */}
 
       <SubTheme />
-        
-      <div className={styles.Main}>Today&apos;s Total Visits: {visitCount}</div>
     </>
   );
 };
