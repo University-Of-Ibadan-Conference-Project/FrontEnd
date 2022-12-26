@@ -27,7 +27,7 @@ const Accomodation = () => {
         available standard hotels and guest houses with good lodging in and
         around the University of Ibadan. Charges are moderate, between{" "}
         <b>N8,000 and N30,000/night.</b> All inquiries should be directed to the{" "}
-        <a href="mailto:email@example.com">
+        <a href="mailto:uisc2023@gmail.com">
           Secretary of the Local Organising Committee
         </a>{" "}
         of this conference.

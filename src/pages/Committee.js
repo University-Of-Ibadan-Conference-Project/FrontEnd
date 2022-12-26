@@ -101,19 +101,19 @@ export default function Committee() {
         <div className={styles.CommitteeCard}>
           <Speaker
             image={VCPic}
-            name={"Prof K.O Adebowale, mni, FAS "}
+            name={"Prof. K.O. Adebowale, mni, FAS "}
             title={"(The Vice Chancellor, University of Ibadan)"}
           />
         </div>
         <div className={styles.CommitteeCard}>
           <Speaker
             image={DeanPic}
-            name={"Prof. A.A Bakare, FAS "}
+            name={"Prof. A.A. Bakare, FAS "}
             title={"(Dean, Faculty of Science, University of Ibadan)"}
           />
           <Speaker
             image={ChairmanPic}
-            name={"Prof. O.O. Sanibare "}
+            name={"Prof. O.O. Sonibare "}
             title="(Chairman, Conference Organizing Committee)"
           />
         </div>
