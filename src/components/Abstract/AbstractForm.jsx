@@ -10,21 +10,27 @@ const AbstractForm = () => {
       <form onSubmit={handleSubmit}>
         <div className="section">
           <div className="section-1">
-            <label htmlFor="title">Title of the Abstract</label>
+            <label className="required" htmlFor="title">
+              Title of the Abstract
+            </label>
             <input type="text" placeholder="Abstract Title" id="title" />
           </div>
           <div className="section-2">
-            <label htmlFor="name">Corresponding Author{`'`}s Name</label>
+            <label className="required" htmlFor="name">
+              Corresponding Author{`'`}s Name
+            </label>
             <input type="text" placeholder="Full Name" id="name" />
           </div>
         </div>
         <div className="section">
           <div className="section-1">
-            <label htmlFor="email">Corresponding Author{`'`}s Email</label>
+            <label className="required" htmlFor="email">
+              Corresponding Author{`'`}s Email
+            </label>
             <input type="email" placeholder="example@example.com" id="email" />
           </div>
           <div className="section-2">
-            <label htmlFor="phone no">
+            <label className="required" htmlFor="phone no">
               Corresponding Author{`'`}s Phone Number
             </label>
             <input type="number" placeholder="Enter your phone number" />
@@ -33,11 +39,15 @@ const AbstractForm = () => {
 
         <div className="section">
           <div className="section-1">
-            <label htmlFor="name">Corresponding Author{`'`}s Institution</label>
+            <label className="required" htmlFor="name">
+              Corresponding Author{`'`}s Institution
+            </label>
             <input type="text" placeholder="Institution" />
           </div>
           <div className="section-2">
-            <label htmlFor="pre">Presentation Type</label>
+            <label className="required" htmlFor="pre">
+              Presentation Type
+            </label>
             <select>
               <option value=""></option>
               <option value="Live Oral Presentation">
@@ -53,7 +63,9 @@ const AbstractForm = () => {
 
         <div className="section">
           <div className="section-1">
-            <label htmlFor="rese">Research Area</label>
+            <label className="required" htmlFor="rese">
+              Research Area
+            </label>
             <select>
               <option value="Aquaculture and the Blue Economy">
                 Aquaculture and the Blue Economy
@@ -90,7 +102,9 @@ const AbstractForm = () => {
             </select>
           </div>
           <div className="section-2">
-            <label htmlFor="rese">Keywords Field</label>
+            <label className="required" htmlFor="rese">
+              Keywords Field
+            </label>
             <input type="text" placeholder="Keywords" />
           </div>
         </div>
@@ -107,7 +121,7 @@ const AbstractForm = () => {
             </a>
           </div>
           <div className="section-2">
-            <label htmlFor="file">
+            <label className="required" htmlFor="file">
               Attach the file of your abstract according to the abstract
               template (File Size must not be greater than 5MB). The abstract
               should be in word format ( .docx )

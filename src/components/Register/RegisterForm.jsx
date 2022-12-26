@@ -47,7 +47,7 @@ const RegisterForm = () => {
         </div>
         <div className="section">
           <div className="section-1">
-            <label className="required" htmlFor="name">
+            <label className="" htmlFor="name">
               Other Name
             </label>
             <input type="text" placeholder="First Name" id="name" />
@@ -81,18 +81,24 @@ const RegisterForm = () => {
         </div>
         <div className="section">
           <div className="section-1">
-            <label htmlFor="name">Institution / Organisation</label>
+            <label className="required" htmlFor="name">
+              Institution / Organisation
+            </label>
             <input type="text" placeholder="Institution" />
           </div>
           <div className="section-2">
-            <label htmlFor="name">Department</label>
+            <label className="required" htmlFor="name">
+              Department
+            </label>
             <input type="text" placeholder="Enter your department" />
           </div>
         </div>
 
         <div className="section">
           <div className="section-1">
-            <label htmlFor="part">Country</label>
+            <label className="required" htmlFor="part">
+              Country
+            </label>
             <select onChange={selectCountry} value={userSelectedCountry}>
               <option hidden={true} defaultValue="">
                 Choose country
@@ -105,7 +111,9 @@ const RegisterForm = () => {
             </select>
           </div>
           <div className="section-2">
-            <label htmlFor="name">State / Province</label>
+            <label className="required" htmlFor="name">
+              State / Province
+            </label>
             <input
               type="text"
               placeholder="State / Province"
@@ -115,7 +123,9 @@ const RegisterForm = () => {
         </div>
         <div className="section">
           <div className="section-1">
-            <label htmlFor="name">City</label>
+            <label className="required" htmlFor="name">
+              City
+            </label>
             <input type="text" placeholder="City" />
           </div>
         </div>
