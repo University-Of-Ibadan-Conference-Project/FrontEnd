@@ -43,6 +43,10 @@
       h3 {
         // font-family: poppins, sans-serif;s
         font-size: 38px;
+
+        @media screen and (max-width: 768px) {
+          font-size: 29px;
+        }
       }
 
       @media (max-width: 1024px) {
