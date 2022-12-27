@@ -115,7 +115,7 @@ const AbstractForm = () => {
               target="_blank"
               rel="noreferrer"
               className="downloadBtn"
-              href="https://drive.google.com/file/d/1I50GbOO5VudTPHJqEDeQ-JYIeG_Wc4De/view"
+              href="https://docs.google.com/file/d/1b9z1xpUtixASBguaJtEgTHdhsKUbljNT/edit?usp=docslist_api&filetype=msword"
             >
               Click to download template
             </a>
