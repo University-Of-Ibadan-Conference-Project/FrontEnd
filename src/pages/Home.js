@@ -10,15 +10,14 @@ const Home = () => {
         <div className={styles.Hero}>
           <div className={styles.title}>
             <h3>
-              THE 5<sup>th</sup> INTERNATIONAL CONFERENCE ON
+              THE FACULTY OF SCIENCE, UNIVERSITY OF IBADAN 5TH INTERNATIONAL
+              CONFERENCE ON
             </h3>
             <h2 className={styles.Submaintheme}>
               SCIENTIFIC RESEARCH IN NIGERIA
             </h2>
           </div>
-          <p className={styles.Hero_year}>
-            2<sup>nd</sup> - 5<sup>th</sup> MAY 2023
-          </p>
+          <p className={styles.Hero_year}>2 - 5 MAY 2023</p>
           <p className={styles.Hero_line}></p>
           <h6 className={styles.Hero_theme}>
             THEME: Strengthening Scientific Research for National Development
