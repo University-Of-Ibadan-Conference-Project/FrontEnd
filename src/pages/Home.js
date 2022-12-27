@@ -17,7 +17,7 @@ const Home = () => {
               SCIENTIFIC RESEARCH IN NIGERIA
             </h2>
           </div>
-          <p className={styles.Hero_year}>2 - 5 MAY 2023</p>
+          <p className={styles.Hero_year}>2 - 5, MAY 2023</p>
           <p className={styles.Hero_line}></p>
           <h6 className={styles.Hero_theme}>
             THEME: Strengthening Scientific Research for National Development
@@ -35,8 +35,8 @@ const Home = () => {
         <h2>ANNOUNCEMENT</h2>
         <p>
           <span>
-            The Faculty of Science is pleased to announce her 5th International
-            Conference on Scientific Research
+            The Faculty of Science, University of Ibadan is pleased to announce
+            her 5th International Conference on Scientific Research
           </span>
           , scheduled to be held from 2nd -5th May, 2023 at the Faculty of
           Science Lakeside Lecture Theater, University of Ibadan. The theme for
