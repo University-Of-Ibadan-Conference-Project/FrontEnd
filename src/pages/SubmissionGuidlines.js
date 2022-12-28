@@ -23,13 +23,14 @@ const SubmissionGuidlines = () => {
         </h2>
         All participants are invited to submit abstracts for oral and/or poster
         presentation(s). The official language is English. Abstracts must be in
-        Microsoft Word format (Times New Roman, font size 12), not more than 350
-        words excluding title and author&apos;s name(s) and a maximum of five
-        keywords. The title should be in bold capital letters followed by the
-        full name(s) (surname first) and address (s) of author(s) including
-        e-mail address and phone number(s) of the corresponding author. The
-        deadline for abstract submission is on or before 28 February, 2023. All
-        the accepted abstracts will be published in the Book of Abstract.
+        <b> Microsoft Word</b> format (Times New Roman, font size 12), not more
+        than <b>350 words</b> excluding title and author&apos;s name(s) and a
+        maximum of five keywords. The title should be in bold capital letters
+        followed by the full name(s) (surname first) and address (s) of
+        author(s) including e-mail address and phone number(s) of the
+        corresponding author. The deadline for abstract submission is on or
+        before 28 February, 2023. All the accepted abstracts will be published
+        in the Book of Abstract.
       </div>
     </>
   );

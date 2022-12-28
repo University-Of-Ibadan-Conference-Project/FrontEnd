@@ -28,8 +28,15 @@ const POCP = () => {
         or before 31 March, 2023. Manuscripts that do not conform to the
         journal&apos;s guidelines will be rejected. Please note that only the
         papers presented at the conference shall be considered for publication
-        after the payment of the Processing Fees of N15, 000.00. Submit your
-        full manuscript <Link to="/submission">here</Link>
+        after the payment of the Processing Fees of{" "}
+        <b
+          style={{
+            color: "red",
+          }}
+        >
+          N15, 000.00
+        </b>
+        . Submit your full manuscript <Link to="/submission">here</Link>
       </div>
     </>
   );
