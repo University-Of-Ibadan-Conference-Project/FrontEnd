@@ -25,11 +25,17 @@ const POCP = () => {
         Participants that want their papers to appear in the Special issue of
         the JOURNAL OF SCIENCE RESEARCH should submit the full text of the
         manuscript following the Journal&apos;s guidelines{" "}
-        <span style={{ color: "red" }}>here</span> on or before 31 March, 2023.
-        Manuscripts that do not conform to the journal&apos;s guidelines will be
-        rejected. Please note that only the papers presented at the conference
-        shall be considered for publication after the payment of the Processing
-        Fees of{" "}
+        <span style={{ color: "red" }}>here</span>{" "}
+        <embed
+          src="POCP.pdf"
+          type="application/pdf"
+          width="100%"
+          height="100%"
+        />
+        on or before 31 March, 2023. Manuscripts that do not conform to the
+        journal&apos;s guidelines will be rejected. Please note that only the
+        papers presented at the conference shall be considered for publication
+        after the payment of the Processing Fees of{" "}
         <b
           style={{
             color: "red",
