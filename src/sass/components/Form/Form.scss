@@ -96,7 +96,8 @@
       }
 
       &:disabled {
-        background-color: lighten($color: #004777, $amount: 60%);
+        background-color: rgba(179, 179, 179, 0.913);
+        cursor: not-allowed;
       }
     }
 
