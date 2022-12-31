@@ -34,7 +34,6 @@
 
           margin-top: 10px;
           border-radius: 6px;
-          border: 1px solid #004777;
           transition: all ease-in-out 300ms;
           &:hover {
             border: 1px solid #00afb5;
@@ -82,7 +81,8 @@
     button,
     .downloadBtn {
       background-color: #004777;
-      border: 0;
+      outline: none;
+      border: none !important;
       color: white;
       padding: 15px 0;
       font-size: 20px;
@@ -93,6 +93,10 @@
       &:hover {
         border: 0;
         background-color: #00afb5;
+      }
+
+      &:disabled {
+        background-color: lighten($color: #004777, $amount: 60%);
       }
     }
 
