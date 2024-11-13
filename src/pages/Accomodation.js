@@ -1,7 +1,8 @@
 import CommonHero from "../components/CommonHero/CommonHero";
 import PropTypes from "prop-types";
 import styles from "./../sass/pages/Accomodation.module.scss";
-import hotelPreview from "./../assets/img/hotel-preview.jpeg";
+// import hotelPreview from "./../assets/img/hotel-preview.jpeg";
+import hotel from "./../assets/img/hotel.jpg";
 
 const Accomodation = () => {
   return (
@@ -9,7 +10,7 @@ const Accomodation = () => {
       <CommonHero
         title="HOTEL ACCOMMODATION"
         info="Get to know more about where to stay"
-        bg={hotelPreview}
+        bg={hotel}
       />
       {/* <h2>Hello</h2> */}
       <div

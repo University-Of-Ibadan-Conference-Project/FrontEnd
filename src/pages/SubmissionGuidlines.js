@@ -28,9 +28,12 @@ const SubmissionGuidlines = () => {
         maximum of five keywords. The title should be in bold capital letters
         followed by the full name(s) (surname first) and address(es) of
         author(s) including e-mail address(es) and phone number(s) of the
-        corresponding author. Author(s) should indicate their presentation preference i.e. oral and/or poster.
-        Please visit <a href="http://wwwuiscience2025jsribadan.ng">here</a> to see the abstract template and submit your abstract online, on or before 28 February 2025.
-        All the accepted abstracts will be published in the Book of Abstracts
+        corresponding author. Author(s) should indicate their presentation
+        preference i.e. oral and/or poster. Please visit{" "}
+        <a href="http://wwwuiscience2025jsribadan.ng">here</a> to see the
+        abstract template and submit your abstract online, on or before 28
+        February 2025. All the accepted abstracts will be published in the Book
+        of Abstracts
       </div>
     </>
   );

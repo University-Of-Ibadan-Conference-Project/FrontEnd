@@ -9,7 +9,6 @@ import styles from "./../../sass/components/Footer.module.scss";
 import logo from "./../../assets/img/v2-logo.png";
 import { useEffect, useState } from "react";
 import countapi from "countapi-js";
-// import Subscribe from "../Subscribe/Subscribe";
 
 export default function Footer() {
   const [visitorsCount, setVisitorsCount] = useState(0);

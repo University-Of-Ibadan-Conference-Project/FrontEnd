@@ -8,7 +8,6 @@ import speaker4 from "./../assets/speakers/_4.JPG";
 import speaker5 from "./../assets/speakers/_5.JPG";
 import speaker6 from "./../assets/speakers/_6.JPG";
 
-
 const Home = () => {
   return (
     <>
@@ -26,7 +25,8 @@ const Home = () => {
           <p className={styles.Hero_year}>6th - 9th May 2025</p>
           <p className={styles.Hero_line}></p>
           <h6 className={styles.Hero_theme}>
-            THEME: Scientific Research, Innovation and Partnership in Contemporary World
+            THEME: Scientific Research, Innovation and Partnership in
+            Contemporary World
           </h6>
           <p className={styles.Hero_remarks}>
             The Faculty of Science is pleased to announce her 5th International
@@ -48,13 +48,19 @@ const Home = () => {
           Science Lakeside Lecture Theater, University of Ibadan. The theme for
           this conference is{""}
           <b>
-            &quot;Scientific Research, Innovation and Partnership in Contemporary World&quot;
+            &quot;Scientific Research, Innovation and Partnership in
+            Contemporary World&quot;
           </b>
-          . The objective of the conference is to promote the international and interdisciplinary exchange of scientific information among scientists in academia, research institutes, and industries. 
-            Highlights of the conference will include Keynotes and Plenary Sessions, Technical Sessions, Panel Sessions, an Exhibition, Excursion, Luncheons/Dinner, and Awards. 
-            It is expected that the scientific ideas to be shared at this conference will be found useful to the policy makers towards national development. 
-            This invitation is open to researchers, policy makers and individuals with a keen interest in scientific research trends and challenges of advancements in technology.
-
+          . The objective of the conference is to promote the international and
+          interdisciplinary exchange of scientific information among scientists
+          in academia, research institutes, and industries. Highlights of the
+          conference will include Keynotes and Plenary Sessions, Technical
+          Sessions, Panel Sessions, an Exhibition, Excursion, Luncheons/Dinner,
+          and Awards. It is expected that the scientific ideas to be shared at
+          this conference will be found useful to the policy makers towards
+          national development. This invitation is open to researchers, policy
+          makers and individuals with a keen interest in scientific research
+          trends and challenges of advancements in technology.
         </p>
       </div>
 
@@ -67,8 +73,8 @@ const Home = () => {
             status={"FAS"}
             isKeyNoteSpeaker={true}
           />
-          <br />
-
+        </div>
+        <div className={styles.Speakers}>
           <KeynoteSpeaker
             isKeyNoteSpeaker={false}
             dp={speaker4}
@@ -112,6 +118,8 @@ const KeynoteSpeaker = ({ dp, name, isKeyNoteSpeaker, status }) => {
 };
 
 KeynoteSpeaker.propTypes = {
+  dp: PropTypes.string,
+  status: PropTypes.string,
   isKeyNoteSpeaker: PropTypes.bool,
   name: PropTypes.string,
 };
