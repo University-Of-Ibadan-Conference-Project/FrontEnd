@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import VCPic from "./../assets/profileImages/profile-3.jpeg";
 // import ChairmanPic from "./../assets/profileImages/profile-1.jpeg";
 import DeanPic from "./../assets/profileImages/profile-1.jpeg";
+import avatar from "./../assets/profileImages/avatar.png";
 
 import styles from "./../sass/pages/Committee.module.scss";
 
@@ -115,11 +116,11 @@ export default function Committee() {
             name={"Prof. O.O. Sonibare "}
             title={"(Dean, Faculty of Science, University of Ibadan)"}
           />
-          {/* <Speaker
-            image={ChairmanPic}
+          <Speaker
+            image={avatar}
             name={"Prof S.T Ogunbanwo"}
             title="(Chairman, Conference Organizing Committee)"
-          /> */}
+          />
         </div>
       </section>
     </div>
