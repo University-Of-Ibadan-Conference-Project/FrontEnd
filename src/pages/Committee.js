@@ -3,8 +3,8 @@ import conferenceBg from "../assets/img/conference-bg.jpg";
 import PropTypes from "prop-types";
 
 import VCPic from "./../assets/profileImages/profile-3.jpeg";
-import ChairmanPic from "./../assets/profileImages/profile-1.jpeg";
-import DeanPic from "./../assets/profileImages/profile-2.jpeg";
+// import ChairmanPic from "./../assets/profileImages/profile-1.jpeg";
+import DeanPic from "./../assets/profileImages/profile-1.jpeg";
 
 import styles from "./../sass/pages/Committee.module.scss";
 
@@ -112,14 +112,14 @@ export default function Committee() {
         <div className={styles.CommitteeCard}>
           <Speaker
             image={DeanPic}
-            name={"Prof. A.A. Bakare, FAS "}
+            name={"Prof. O.O. Sonibare "}
             title={"(Dean, Faculty of Science, University of Ibadan)"}
           />
-          <Speaker
+          {/* <Speaker
             image={ChairmanPic}
-            name={"Prof. O.O. Sonibare "}
+            name={"Prof S.T Ogunbanwo"}
             title="(Chairman, Conference Organizing Committee)"
-          />
+          /> */}
         </div>
       </section>
     </div>
