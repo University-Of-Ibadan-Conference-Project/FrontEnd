@@ -3,9 +3,9 @@ import conferenceBg from "../assets/img/conference-bg.jpg";
 import PropTypes from "prop-types";
 
 import VCPic from "./../assets/profileImages/profile-3.jpeg";
-// import ChairmanPic from "./../assets/profileImages/profile-1.jpeg";
+import ChairmanPic from "./../assets/profileImages/avatar.jpg";
 import DeanPic from "./../assets/profileImages/profile-1.jpeg";
-import avatar from "./../assets/profileImages/avatar.png";
+// import avatar from "./../assets/profileImages/avatar.jpg";
 
 import styles from "./../sass/pages/Committee.module.scss";
 
@@ -117,7 +117,7 @@ export default function Committee() {
             title={"(Dean, Faculty of Science, University of Ibadan)"}
           />
           <Speaker
-            image={avatar}
+            image={ChairmanPic}
             name={"Prof S.T Ogunbanwo"}
             title="(Chairman, Conference Organizing Committee)"
           />
